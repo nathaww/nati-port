@@ -46,21 +46,24 @@ export default function Home() {
         ]}
       />
 
-      <section className="py-16 px-4 bg-white dark:bg-slate-950">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Areas of Ownership
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 mb-12 max-w-2xl">
-            Leading cross-functional teams across the full product lifecycle.
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-">
-            {domainAreas.map((domain) => {
+      <section className="py-20 px-4 bg-white dark:bg-slate-950">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-6">
+            <h2 className="text-4xl md:text-5xl mb-6 text-black font-[Arial]">
+              Areas of Ownership
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-[PPEditorial]">
+              Leading cross-functional teams across the full product lifecycle.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {domainAreas.map((domain, index) => {
               const IconComponent = iconMap[domain.icon] || Icons.Globe;
               return (
                 <DomainCard
+                  id={index}
                   key={domain.domain}
-                  icon={<IconComponent className="w-6 h-6" />}
+                  icon={<IconComponent className="w-8 h-8" />}
                   title={domain.title}
                   blurb={domain.blurb}
                   metrics={domain.metrics}
@@ -74,7 +77,7 @@ export default function Home() {
 
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[Arial]">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -85,17 +88,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-slate-50 dark:bg-slate-950">
+      <section className="py-16 px-4 bg-primary/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[Arial]">
             Leadership Highlights
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400">
+              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-[Arial]">
                 Cross-Functional Leadership
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-[PPEditorial]">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Led teams of 5-8 across engineering, design, and data analytics</span>
@@ -111,10 +114,10 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400">
+              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-[Arial]">
                 Results & KPIs
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-[PPEditorial]">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Shipped 12+ major features with 95%+ on-time delivery</span>

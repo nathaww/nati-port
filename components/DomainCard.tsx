@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ArrowRight } from "./icons";
 
 type DomainCardProps = {
+  id: number;
   icon: React.ReactNode;
   title: string;
   blurb: string;
@@ -9,37 +9,34 @@ type DomainCardProps = {
   href: string;
 };
 
-export function DomainCard({ icon, title, blurb, metrics, href }: DomainCardProps) {
+export function DomainCard({ id, icon, title, blurb, metrics, href }: DomainCardProps) {
   return (
     <Link
       href={href}
-      className="group block p-6 rounded- border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+      className="group block p-8 rounded-2xl border-0 bg-white"
     >
-      <div className="flex items-start gap-4 mb-4">
-        <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900 transition-colors">
+      <div className="flex flex-col items-start mb-6 group">
+        <p className="font-[PPEditorial] w-full border-b-[1px] text-gray-400 border-gray-400 mb-6 pb-2 group-hover:border-black group-hover:text-gray-600 transition-all duration-300">
+          0{id + 1}
+        </p>
+        <h3 className="text-xl text-center font-bold mb-4 text-slate-900 dark:text-slate-100 font-[Arial] flex items-center gap-2">
+         <div className="bg-primary/20 group-hover:bg-primary/30 p-3 rounded-xl transition-all duration-300">
           {icon}
-        </div>
-        <div className="flex-1">
-          <h3 className="text-lg font-semibold mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
-            {title}
-          </h3>
-        </div>
+         </div>
+          {title}
+        </h3>
+        <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 text-sm font-[PPEditorial]">
+          {blurb}
+        </p>
       </div>
-      <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-        {blurb}
-      </p>
-      <ul className="space-y-1.5 mb-4">
+      <ul className="space-y-2">
         {metrics.map((metric, idx) => (
-          <li key={idx} className="text-sm text-slate-500 dark:text-slate-500 flex items-start">
-            <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
+          <li key={idx} className="text-xs text-slate-500 dark:text-slate-500 flex items-start">
+            <span className="text-slate-400 dark:text-slate-500 mr-3">•</span>
             <span>{metric}</span>
           </li>
         ))}
       </ul>
-      <div className="flex items-center text-emerald-700 dark:text-emerald-400 text-sm font-medium group-hover:gap-2 transition-all">
-        View projects
-        <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </div>
     </Link>
   );
 }

@@ -43,7 +43,7 @@ export function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <article className="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden hover:shadow-lg hover:border-emerald-300 dark:hover:border-emerald-700 transition-all">
+    <article className="group border border-slate-200 bg-white overflow-hidden cursor-pointer transition-all">
       {image && (
         <div className="relative w-full h-48 bg-slate-100 dark:bg-slate-800 overflow-hidden">
           <Image
@@ -60,7 +60,7 @@ export function ProjectCard({
           {domains.map((domain) => (
             <span
               key={domain}
-              className={`px-2.5 py-1 rounded-md text-xs font-medium ${
+              className={`px-2.5 py-1 rounded-full text-xs font-medium ${
                 domainColors[domain] || domainColors.web
               }`}
             >
@@ -69,7 +69,7 @@ export function ProjectCard({
           ))}
         </div>
         
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+        <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 font-[Arial] transition-colors">
           {title}
         </h3>
         
