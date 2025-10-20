@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "applizy-ai-resume-builder",
+    "title": "Applizy AI Resume & Cover Letter Builder",
+    "domains": ["ai", "web"],
+    "role": "Product Manager",
+    "team": "3 AI Engineers, 2 Frontend Developers, 1 Designer",
+    "stack": ["GPT API", "Python", "Node.js", "React", "TypeScript"],
+    "outcomes": [
+      "500+ beta users in first 3 months",
+      "60% reduction in application completion time",
+      "Automated drafts with human QA loop achieving 95% positive feedback",
+      "40% uplift in draft-to-submission conversion"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/natnael/applizy_coverletter_generator"
+      }
+    ],
+    "image": "/projects/applizy-cover.png",
+    "featured": true
+  },
+  {
+    "slug": "stafrica-data-dashboard",
+    "title": "STAfrica KPI & Analytics Dashboards",
+    "domains": ["data"],
+    "role": "PM / Data Lead",
+    "team": "2 Data Analysts, 1 BI Developer",
+    "stack": ["Power BI", "Python", "SQL", "Azure"],
+    "outcomes": [
+      "Unified executive dashboard with 20+ KPIs across 5 departments",
+      "80% reduction in manual reporting overhead",
+      "Weekly automated refresh pipeline",
+      "35% faster decision cycles for leadership"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/natnael/retail_kpi_pipeline"
+      }
+    ],
+    "image": "/projects/bi-dashboard.png",
+    "featured": true
+  },
+  {
+    "slug": "mobile-app-ecommerce",
+    "title": "E-Commerce Mobile Platform",
+    "domains": ["mobile"],
+    "role": "Product Manager",
+    "team": "2 Mobile Devs, 1 Backend Dev, 1 Designer",
+    "stack": ["React Native", "Node.js", "PostgreSQL", "Firebase"],
+    "outcomes": [
+      "900+ DAU within first month",
+      "Release cycle reduced from 10 to 6 days",
+      "Crash rate maintained at ≤ 0.3%",
+      "4.5★ average rating on app stores"
+    ],
+    "links": [],
+    "image": "/projects/mobile-app.png",
+    "featured": true
+  },
+  {
+    "slug": "web-platform-migration",
+    "title": "Enterprise Web Platform Migration",
+    "domains": ["web"],
+    "role": "Technical PM",
+    "team": "4 Full-stack Developers, 1 DevOps",
+    "stack": ["Next.js", "TypeScript", "GraphQL", "Docker"],
+    "outcomes": [
+      "Sub-2.1s average page load time",
+      "42% faster feature delivery post-migration",
+      "99.9% uptime SLA achieved",
+      "Reduced infrastructure costs by 25%"
+    ],
+    "links": [],
+    "image": "/projects/web-platform.png",
+    "featured": false
+  },
+  {
+    "slug": "design-system",
+    "title": "Cross-Platform Design System",
+    "domains": ["uiux"],
+    "role": "Product Manager",
+    "team": "2 Designers, 3 Frontend Devs",
+    "stack": ["Figma", "React", "Storybook", "Tailwind CSS"],
+    "outcomes": [
+      "50% faster design-to-dev handoff",
+      "User satisfaction improved from 3.8 to 4.6",
+      "WCAG AA compliance across all components",
+      "Adopted by 5 product teams"
+    ],
+    "links": [],
+    "image": "/projects/design-system.png",
+    "featured": false
+  },
+  {
+    "slug": "cicd-pipeline",
+    "title": "Automated CI/CD Pipeline Implementation",
+    "domains": ["qa"],
+    "role": "Product Manager",
+    "team": "1 DevOps Engineer, 2 QA Engineers",
+    "stack": ["GitHub Actions", "Docker", "Jest", "Playwright"],
+    "outcomes": [
+      "28% reduction in release defects",
+      "99.9% build success rate over rolling 30 days",
+      "35% shorter regression test suites",
+      "Deploy frequency increased from weekly to daily"
+    ],
+    "links": [],
+    "image": "/projects/cicd.png",
+    "featured": false
+  }
+]
