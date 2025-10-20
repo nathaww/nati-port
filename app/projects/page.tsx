@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { ProjectCard } from "@/components/ProjectCard";
 import projectsData from "@/data/projects.json";
@@ -18,7 +18,7 @@ const domainFilters = [
   { value: "qa", label: "QA/CI" },
 ];
 
-export default function ProjectsPage() {
+function ProjectsContent() {
   const searchParams = useSearchParams();
   const domainParam = searchParams.get("domain");
   
@@ -101,5 +101,13 @@ export default function ProjectsPage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={<div className="py-16 px-4"><div className="max-w-5xl mx-auto">Loading...</div></div>}>
+      <ProjectsContent />
+    </Suspense>
   );
 }
