@@ -98,3 +98,18 @@ html {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+
+/* SplitText utilities */
+.char-mask,
+.line-mask {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.char,
+.line {
+  position: relative;
+  display: inline-block;
+  transform: translateY(0);
+  will-change: transform;
+}

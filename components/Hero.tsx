@@ -1,7 +1,11 @@
+"use client"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import HeroCard from "./HeroCard";
+import { useEffect } from "react";
+import gsap from 'gsap';
+import { SplitText } from 'gsap/SplitText';
 
 export type CTAButton = {
   label: string;
@@ -12,9 +16,61 @@ export type CTAButton = {
 
 type HeroProps = {
   ctas: CTAButton[];
+  startAnimation?: boolean;
 };
 
-export function Hero({ ctas }: HeroProps) {
+export function Hero({ ctas, startAnimation }: HeroProps) {
+  useEffect(() => {
+    if (!startAnimation) return;
+
+    const createSplit = (selector: string, type: 'chars' | 'lines', className: string) => {
+      return SplitText.create(selector, {
+        type: type,
+        [type + 'Class']: className,
+        mask: type,
+      });
+    };
+
+    // Split header text
+    const splitHeader = createSplit('.header-row h1', 'lines', 'line');
+    const headerLines = splitHeader.lines as HTMLElement[];
+
+    // Set initial positions
+    gsap.set(headerLines, { yPercent: 100 });
+
+    // Create timeline for hero section reveal
+    const tl = gsap.timeline({ delay: 0 });
+
+    // Animate header lines up
+    tl.to(
+      '.header-row .line',
+      {
+        yPercent: 0,
+        duration: 1,
+        ease: 'power4.out',
+        stagger: 0.1,
+      },
+      '-=0.75'
+    );
+
+    // Animate dividers
+    tl.to(
+      '.divider',
+      {
+        scaleX: 1,
+        duration: 1,
+        ease: 'power4.out',
+        stagger: 0.1,
+      },
+      '<'
+    );
+
+    // Cleanup
+    return () => {
+      tl.kill();
+      splitHeader.revert();
+    };
+  }, [startAnimation]);
   return (
     <section className="relative bg-background rounded-b-[4.5rem] py-20 md:py-26 px-4 flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
