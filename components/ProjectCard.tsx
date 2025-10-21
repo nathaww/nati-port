@@ -69,7 +69,7 @@ export function ProjectCard({
           ))}
         </div>
         
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 font-[Arial] transition-colors">
+        <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 font-manrope transition-colors">
           {title}
         </h3>
         

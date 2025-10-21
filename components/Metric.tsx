@@ -6,7 +6,7 @@ type MetricProps = {
 
 export function Metric({ label, value, caption }: MetricProps) {
   return (
-    <div className="text-center font-[Arial]">
+    <div className="text-center font-manrope">
       <div className="text-3xl md:text-4xl font-bold text-emerald-700 dark:text-emerald-400 mb-1">
         {value}
       </div>

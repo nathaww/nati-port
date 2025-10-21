@@ -17,8 +17,8 @@ type HeroProps = {
 export function Hero({ ctas }: HeroProps) {
   return (
     <section className="relative bg-background rounded-b-[4.5rem] py-20 md:py-26 px-4 flex items-center justify-center">
-      <div className="max-w-5xl mx-auto">
-        <div className="max-w-3xl flex flex-col items-center gap-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl flex flex-col items-center gap-6">
           <div className="size-48 relative">
             <Image
               width={200}
@@ -30,7 +30,7 @@ export function Hero({ ctas }: HeroProps) {
             />
             <HeroCard />
           </div>
-          <h1 className="text-4xl md:text-6xl text-black font-[Arial] font-extrabold uppercase text-center">
+          <h1 className="text-4xl md:text-7xl text-black font-manrope font-extrabold uppercase text-center">
             Building data-driven products with people-first leadership.
           </h1>
           <div className="flex flex-wrap gap-4">

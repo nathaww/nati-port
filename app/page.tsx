@@ -47,12 +47,12 @@ export default function Home() {
       />
 
       <section className="py-20 px-4 bg-white dark:bg-slate-950">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="text-4xl md:text-5xl mb-6 text-black font-[Arial]">
+            <h2 className="text-4xl md:text-5xl mb-6 text-black font-manrope font-extrabold uppercase">
               Areas of Ownership
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-[PPEditorial]">
+            <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-agdasima">
               Leading cross-functional teams across the full product lifecycle.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
 
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[Arial]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-manrope">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -90,15 +90,15 @@ export default function Home() {
 
       <section className="py-16 px-4 bg-primary/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-[Arial]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-manrope">
             Leadership Highlights
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-[Arial]">
+              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-manrope">
                 Cross-Functional Leadership
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-[PPEditorial]">
+              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-agdasima">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Led teams of 5-8 across engineering, design, and data analytics</span>
@@ -114,10 +114,10 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-[Arial]">
+              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-manrope">
                 Results & KPIs
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-[PPEditorial]">
+              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-agdasima">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Shipped 12+ major features with 95%+ on-time delivery</span>

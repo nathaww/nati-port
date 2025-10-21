@@ -16,16 +16,16 @@ export function DomainCard({ id, icon, title, blurb, metrics, href }: DomainCard
       className="group block p-8 rounded-2xl border-0 bg-white"
     >
       <div className="flex flex-col items-start mb-6 group">
-        <p className="font-[PPEditorial] w-full border-b-[1px] text-gray-400 border-gray-400 mb-6 pb-2 group-hover:border-black group-hover:text-gray-600 transition-all duration-300">
+        <p className="font-agdasima w-full border-b-[1px] text-gray-400 border-gray-400 mb-6 pb-2 group-hover:border-black group-hover:text-gray-600 transition-all duration-300">
           0{id + 1}
         </p>
-        <h3 className="text-xl text-center font-bold mb-4 text-slate-900 dark:text-slate-100 font-[Arial] flex items-center gap-2">
+        <h3 className="text-xl text-center font-bold mb-4 text-slate-900 dark:text-slate-100 font-manrope flex items-center gap-2">
          <div className="bg-primary/20 group-hover:bg-primary/30 p-3 rounded-xl transition-all duration-300">
           {icon}
          </div>
           {title}
         </h3>
-        <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 text-sm font-[PPEditorial]">
+        <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 text-sm font-agdasima">
           {blurb}
         </p>
       </div>
