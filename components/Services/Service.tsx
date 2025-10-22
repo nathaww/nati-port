@@ -35,7 +35,7 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
                 className="card bg-white border border-slate-500 rounded-[4rem] flex flex-col justify-between"
                 style={{
                     scale,
-                    top: isMobile ? `calc(-2vh + ${i * 35}px)` : `calc(-5vh + ${i * 35}px)`
+                    top: isMobile ? `calc(${i * 35}px)` : `calc(-5vh + ${i * 35}px)`
                 }}
             >
                 <div className="flex items-center gap-4 mb-4 lg:mb-6">
