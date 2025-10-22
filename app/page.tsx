@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import * as Icons from "@/components/icons";
 import { Metric } from "@/components/Metric";
 import { ProjectCard } from "@/components/ProjectCard";
+import TrustedBy from "@/components/TrustedBy";
 import projectsData from "@/data/projects.json";
 import { domainAreas } from "@/lib/data";
 import { Project } from "@/lib/types";
@@ -89,9 +90,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-primary/10">
+      <section className="py-16 px-4 bg-primary/10 rounded-[4rem]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-manrope">
+          <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -144,21 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-sm font-medium text-slate-600 dark:text-slate-400 mb-6">
-            TRUSTED BY
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 opacity-60">
-            <div className="text-2xl font-bold text-slate-700 dark:text-slate-300">
-              STAfrica
-            </div>
-            <div className="text-2xl font-bold text-slate-700 dark:text-slate-300">
-              Applizy
-            </div>
-          </div>
-        </div>
-      </section>
+      <TrustedBy />
     </main>
   );
 }

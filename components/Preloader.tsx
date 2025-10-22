@@ -200,7 +200,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       />
 
       <div 
-        className="preloader-copy absolute bottom-20 left-1/2 -translate-x-1/2 w-[30%] text-white md:w-[80%]"
+        className="preloader-copy absolute bottom-20 left-1/2 -translate-x-1/2 w-full px-4 md:px-0 text-white md:w-[80%]"
         ref={copyRef}
       >
         <p className="uppercase text-center text-[0.8rem] font-medium">
@@ -210,7 +210,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
 
       <div className="preloader-header fixed w-full flex justify-center items-center z-[10000] translate-y-[60vh] origin-top md:translate-y-[50vh]">
         <span 
-          className="uppercase text-white font-agdasima text-[7.5rem] font-semibold leading-[0.9] block md:text-[4rem]"
+          className="uppercase text-white font-agdasima text-[3.5rem] font-semibold leading-[0.9] block md:text-[4rem]"
         >
           NATNAEL ENDALE
         </span>

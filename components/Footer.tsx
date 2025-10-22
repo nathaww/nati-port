@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "./icons";
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 dark:border-slate-800 mt-20">
+    <footer className=" mt-20">
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>

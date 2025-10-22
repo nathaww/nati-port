@@ -3,14 +3,15 @@ import LogoLoop from "./Marquee";
 
 // Alternative with image sources
 const imageLogos = [
-    { src: "/imgs/profile.jpg", alt: "Company 1", href: "https://company1.com" },
-    { src: "/imgs/profile.jpg", alt: "Company 2", href: "https://company2.com" },
-    { src: "/imgs/profile.jpg", alt: "Company 3", href: "https://company3.com" },
+    { src: "/imgs/profile.png", alt: "Company 1", href: "https://company1.com" },
+    { src: "/imgs/profile.png", alt: "Company 2", href: "https://company2.com" },
+    { src: "/imgs/profile.png", alt: "Company 3", href: "https://company3.com" },
 ];
 
 const TrustedBy = () => {
     return (
-        <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+        <div className="relative overflow-hidden h-auto flex flex-col justify-center items-center rounded-b-[4rem] py-20 border-b-2 border-gray-300">
+            <h3 className="text-xl mb-4 font-manrope font-extrabold">Trusted By</h3>
             <LogoLoop
                 logos={imageLogos}
                 speed={120}
