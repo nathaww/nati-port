@@ -7,16 +7,16 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-3 text-white">
+            <h3 className="text-3xl md:text-4xl uppercase mb-3 text-white font-extrabold font-manrope">
               Let&apos;s build something insightful.
             </h3>
-            <p className="text-white mb-4">
+            <p className="text-white mb-4 font-agdasima">
               Open to new opportunities and collaborations in product management,
               data analytics, and AI engineering.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-lg font-medium hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full font-medium "
             >
               Get in touch
             </Link>
