@@ -10,7 +10,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-background">
+    <nav className="fixed top-0 z-10 bg-white w-full">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link

@@ -3,12 +3,10 @@ import { DomainCard } from "@/components/DomainCard";
 import { Hero } from "@/components/Hero";
 import * as Icons from "@/components/icons";
 import { Metric } from "@/components/Metric";
-import Preloader from "@/components/Preloader";
 import { ProjectCard } from "@/components/ProjectCard";
 import projectsData from "@/data/projects.json";
 import { domainAreas } from "@/lib/data";
 import { Project } from "@/lib/types";
-import { useState } from "react";
 
 const projects = projectsData as Project[];
 const featuredProjects = projects.filter((p) => p.featured);

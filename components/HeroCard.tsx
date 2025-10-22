@@ -8,12 +8,11 @@ const HeroCard = () => {
             <motion.div className="flex whitespace-pre" layout>
                 <TextRotate
                     texts={[
-                        "Natnael Endale",
                         "Product Manager",
                         "AI & Data Systems",
                         "Team Builder",
                     ]}
-                    mainClassName="text-black font-manrope px-2 sm:px-2 md:px-3 bg-white absolute top-1/2 -translate-y-1/2 -rotate-12 -right-1/2  overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-full"
+                    mainClassName="text-black text-sm font-manrope px-2 md:px-2 bg-white overflow-hidden py-0.5 md:py-2 justify-center rounded-full"
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
