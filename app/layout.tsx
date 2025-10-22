@@ -3,6 +3,7 @@ import { Navigation } from "@/components/Navigation";
 import PreloaderWrapper from "@/components/PreloaderWrapper";
 import SmoothScrolling from "@/utils/SmoothScroll";
 import type { Metadata } from "next";
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,13 +20,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="bg-black">
       <body className="antialiased">
-        <SmoothScrolling>
-          <PreloaderWrapper>
-            <Navigation />
-            {children}
-            <Footer />
-          </PreloaderWrapper>
-        </SmoothScrolling>
+        <NuqsAdapter>
+          <SmoothScrolling>
+            <PreloaderWrapper>
+              <Navigation />
+              {children}
+              <Footer />
+            </PreloaderWrapper>
+          </SmoothScrolling>
+        </NuqsAdapter>
       </body>
     </html>
   );

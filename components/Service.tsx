@@ -48,6 +48,7 @@ const Service = () => {
                         progress={scrollYProgress}
                         range={[rangeStart, 1]}
                         targetScale={targetScale}
+                        domain={domain.domain}
                     />
                 })
             }

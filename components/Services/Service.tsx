@@ -1,19 +1,32 @@
-'use client'
-import { motion, MotionValue, useTransform } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+"use client"
+import { useTransform, motion, MotionValue } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
 import './service.css';
+import Link from 'next/link';
 
 interface ServiceCardProps {
-    title: string,
-    copy: string,
-    icon?: React.ReactNode,
-    i: number,
-    progress: MotionValue<number>,
-    range: [number, number],
-    targetScale: number
+    i: number;
+    title: string;
+    copy: string;
+    icon: React.ReactNode;
+    progress: MotionValue<number>;
+    range: [number, number];
+    targetScale: number;
+    domain: string;
 }
 
-const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: ServiceCardProps) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ i, title, copy, icon, progress, range, targetScale, domain }) => {
+    // Map service domains to project filter domains
+    const domainMap: Record<string, string> = {
+        'data': 'data',
+        'automation': 'ai',
+        'poc': 'web',
+        'web': 'web',
+        'ux': 'uiux',
+        'business': 'all'
+    };
+    
+    const projectDomain = domainMap[domain] || 'all';
     const container = useRef(null);
     const [isMobile, setIsMobile] = useState(false);
 
@@ -55,12 +68,15 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
                         </div>
                     </div>
 
-                    <button className='circle-button bg-primary cursor-pointer font-manrope text-white font-bold md:size-36 text-sm rounded-full py-4 lg:py-0 mt-6 lg:mt-0'>
-                        <span className="relative z-10">
-                            Show Related Projects
-                        </span>
+                    <Link 
+                        href={`/projects?domain=${projectDomain}`} 
+                        className='circle-button bg-primary cursor-pointer font-manrope text-white font-bold md:size-36 text-sm rounded-full py-4 lg:py-0 mt-6 lg:mt-0 flex items-center justify-center'
+                    >
+                        <p className="relative z-10 mx-auto text-center">
+                            Show <br /> Projects
+                        </p>
                         <span className="circle-bg" />
-                    </button>
+                    </Link>
                 </div>
             </motion.div>
         </div>

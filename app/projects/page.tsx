@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useQueryState } from "nuqs";
 import { ProjectCard } from "@/components/ProjectCard";
 import projectsData from "@/data/projects.json";
 import { Project } from "@/lib/types";
+import { motion, AnimatePresence } from "framer-motion";
 
 const projects = projectsData as Project[];
 
@@ -18,14 +18,16 @@ const domainFilters = [
   { value: "qa", label: "QA/CI" },
 ];
 
-function ProjectsContent() {
-  const searchParams = useSearchParams();
-  const domainParam = searchParams.get("domain");
-  
-  const [selectedDomain, setSelectedDomain] = useState(domainParam || "all");
-  const [sortBy, setSortBy] = useState<"recent" | "impact">("recent");
+export default function ProjectsPage() {
+  const [selectedDomain, setSelectedDomain] = useQueryState("domain", {
+    defaultValue: "all",
+  });
+  const [sortBy, setSortBy] = useQueryState("sort", {
+    defaultValue: "recent",
+  });
 
-  const filteredProjects = useMemo(() => {
+  // Filter and sort projects
+  const filteredProjects = (() => {
     const filtered =
       selectedDomain === "all"
         ? projects
@@ -36,11 +38,11 @@ function ProjectsContent() {
     } else {
       return [...filtered].sort((a, b) => b.outcomes.length - a.outcomes.length);
     }
-  }, [selectedDomain, sortBy]);
+  })();
 
   return (
     <main className="py-24 px-4 bg-white mb-[80vh] md:mb-[50vh] rounded-b-[4rem]">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-manrope uppercase">Projects</h1>
           <p className="text-lg text-slate-600 max-w-2xl font-agdasima">
@@ -56,8 +58,8 @@ function ProjectsContent() {
                 onClick={() => setSelectedDomain(filter.value)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 font-manrope ${
                   selectedDomain === filter.value
-                    ? "bg-emerald-700 text-white"
-                    : "bg-slate-100 text-slate-700 dark:text-slate-300 hover:bg-slate-200"
+                    ? "bg-primary text-white"
+                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
                 aria-pressed={selectedDomain === filter.value}
               >
@@ -73,7 +75,7 @@ function ProjectsContent() {
             <select
               id="sort"
               value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as "recent" | "impact")}
+              onChange={(e) => setSortBy(e.target.value)}
               className="px-3 py-2 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 font-agdasima"
             >
               <option value="recent">Most Recent</option>
@@ -82,32 +84,58 @@ function ProjectsContent() {
           </div>
         </div>
 
-        <div className="mb-6 text-sm text-slate-600 dark:text-slate-400 font-agdasima">
+        <motion.div 
+          layout
+          className="mb-6 text-sm text-slate-600 dark:text-slate-400 font-agdasima"
+        >
           Showing {filteredProjects.length} project{filteredProjects.length !== 1 ? "s" : ""}
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.slug} {...project} />
-          ))}
-        </div>
+        <motion.div 
+          layout
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            {filteredProjects.map((project) => (
+              <motion.div
+                key={`${selectedDomain}-${sortBy}-${project.slug}`}
+                layout
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                animate={{ 
+                  opacity: 1, 
+                  scale: 1, 
+                  y: 0,
+                  transition: {
+                    duration: 0.3,
+                    ease: [0.25, 0.1, 0.25, 1],
+                  }
+                }}
+                exit={{ 
+                  opacity: 0, 
+                  scale: 0.9,
+                  transition: {
+                    duration: 0.2,
+                  }
+                }}
+              >
+                <ProjectCard {...project} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
 
         {filteredProjects.length === 0 && (
-          <div className="text-center py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center py-16"
+          >
             <p className="text-slate-600 dark:text-slate-400 text-lg font-agdasima">
               No projects found in this category.
             </p>
-          </div>
+          </motion.div>
         )}
       </div>
     </main>
-  );
-}
-
-export default function ProjectsPage() {
-  return (
-    <Suspense fallback={<div className="py-16 px-4"><div className="max-w-5xl mx-auto">Loading...</div></div>}>
-      <ProjectsContent />
-    </Suspense>
   );
 }
