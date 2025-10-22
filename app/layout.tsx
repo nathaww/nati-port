@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="py-0">
-        <body className="antialiased py-0">
+    <html lang="en" className="py-0 my-0">
+        <body className="antialiased py-0 my-0">
       <PreloaderWrapper>
           <SmoothScrolling>
             <Navigation />
