@@ -71,7 +71,7 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
     };
   }, [startAnimation]);
   return (
-    <section className="relative bg-white min-h-screen rounded-b-[4.5rem] py-16 md:py-20 px-4 flex items-end justify-center">
+    <section className="relative bg-white min-h-screen py-16 md:py-20 px-4 flex items-end justify-center">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-5xl flex flex-col items-center gap-6">
 

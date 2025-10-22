@@ -3,14 +3,14 @@ import { Github, Linkedin, Mail } from "./icons";
 
 export function Footer() {
   return (
-    <footer className=" mt-20">
+    <footer className=" py-20 bg-black">
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-3">
+            <h3 className="text-2xl font-bold mb-3 text-white">
               Let&apos;s build something insightful.
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
+            <p className="text-white mb-4">
               Open to new opportunities and collaborations in product management,
               data analytics, and AI engineering.
             </p>
@@ -29,7 +29,7 @@ export function Footer() {
                 href="https://github.com/natnael"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6" />
@@ -38,14 +38,14 @@ export function Footer() {
                 href="https://linkedin.com/in/natnael"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
                 href="mailto:natnael@example.com"
-                className="p-2 text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
                 aria-label="Email"
               >
                 <Mail className="w-6 h-6" />

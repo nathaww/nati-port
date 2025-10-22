@@ -23,7 +23,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black">
       <Hero
         ctas={[
           { label: "Contact", href: "/contact", variant: "primary" },
@@ -58,7 +58,7 @@ export default function Home() {
               Leading cross-functional teams across the full product lifecycle.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {domainAreas.map((domain, index) => {
               const IconComponent = iconMap[domain.icon] || Icons.Globe;
               return (
@@ -77,8 +77,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 font-manrope">
             Featured Projects
           </h2>
@@ -90,8 +90,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-primary/10 rounded-[4rem]">
-        <div className="max-w-5xl mx-auto">
+      <section className="bg-white">
+        <div className="w-full h-full bg-primary/30 px-4 py-16 rounded-[4rem]">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
           </h2>
@@ -142,6 +143,7 @@ export default function Home() {
             <Metric label="Stakeholders Managed" value="30+" />
             <Metric label="On-Time Delivery" value="95%" />
           </div>
+        </div>
         </div>
       </section>
 
