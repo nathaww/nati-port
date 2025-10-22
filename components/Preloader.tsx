@@ -189,10 +189,9 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
 
   return (
     <div 
-      className="fixed inset-0 w-full h-full bg-black overflow-hidden z-[9999] preloader"
+      className="fixed inset-0 w-screen h-screen bg-black overflow-hidden z-[9999] preloader"
       style={{ 
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        minHeight: '100dvh'
       }}
       ref={preloaderRef}
     >
