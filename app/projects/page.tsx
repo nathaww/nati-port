@@ -39,7 +39,7 @@ function ProjectsContent() {
   }, [selectedDomain, sortBy]);
 
   return (
-    <main className="py-16 px-4 bg-white mb-[80vh] md:mb-[50vh] rounded-b-[4rem]">
+    <main className="py-24 px-4 bg-white mb-[80vh] md:mb-[50vh] rounded-b-[4rem]">
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-manrope uppercase">Projects</h1>

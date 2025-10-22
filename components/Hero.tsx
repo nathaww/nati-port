@@ -88,7 +88,7 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
                 target={cta.external ? "_blank" : undefined}
                 rel={cta.external ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2",
+                  "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 font-manrope",
                   cta.variant === "primary" &&
                   "bg-emerald-700 text-white hover:bg-emerald-800 focus:ring-emerald-500",
                   cta.variant === "secondary" &&
@@ -109,9 +109,9 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
                 target={cta.external ? "_blank" : undefined}
                 rel={cta.external ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2",
+                  "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 font-manrope",
                   cta.variant === "primary" &&
-                  "bg-primary text-white hover:bg-primary/90 focus:ring-primary",
+                  "bg-emerald-700 text-white hover:bg-emerald-800 focus:ring-emerald-500",
                   cta.variant === "secondary" &&
                   "bg-black text-white hover:bg-white hover:text-black focus:ring-slate-500",
                   (!cta.variant || cta.variant === "ghost") &&

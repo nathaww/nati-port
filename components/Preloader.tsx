@@ -189,8 +189,11 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
 
   return (
     <div 
-      className="fixed top-0 left-0 w-screen h-screen bg-black overflow-hidden z-[9999] preloader"
-      style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
+      className="fixed inset-0 w-full h-full bg-black overflow-hidden z-[9999] preloader"
+      style={{ 
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        minHeight: '100dvh'
+      }}
       ref={preloaderRef}
     >
       <div 
@@ -203,7 +206,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         className="preloader-copy absolute bottom-20 left-1/2 -translate-x-1/2 w-full px-4 md:px-0 text-white md:w-[80%]"
         ref={copyRef}
       >
-        <p className="hidden lg:flex uppercase text-center text-[0.8rem] font-medium">
+        <p className="font-agdasima uppercase text-center text-[0.8rem] font-medium px-4 lg:px-0">
           Product Manager & Technical Leader Building data-driven products with people-first leadership
         </p>
       </div>

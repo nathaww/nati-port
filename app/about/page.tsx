@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Download, BarChart3, Users, Target, Zap, Smartphone, MessageSquare } from "@/components/icons";
+import { Download } from "@/components/icons";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
     return (
-        <main className="py-16 px-4 bg-white mb-[80vh] md:mb-[50vh] rounded-b-[4rem]">
+        <main className="py-24 px-4 bg-white mb-[80vh] md:mb-[50vh] rounded-b-[4rem]">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold mb-8 font-manrope uppercase">About Me</h1>
 
@@ -17,25 +17,25 @@ export default function AboutPage() {
                 <section className="mb-16">
                     <div className="prose dark:prose-invert max-w-none">
                         <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-agdasima">
-                            I&apos;m a Product Manager who bridges the gap between data insights and user impact. With a
-                            foundation in data analytics and AI engineering, I lead cross-functional teams to build
-                            products that solve real problems at scale.
+                            Natnael Endale is a Product Manager who blends data analytics, automation, and design to
+                            build intelligent, testable products.
+                            He&apos;s fluent in SQL, Python, and Power BI for data; and tools like Lovable, Figma AI, Supabase,
+                            and Zapier for rapid front-end and process automation.
                         </p>
-                        <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-agdasima">
-                            My approach combines rigorous data analysis with people-first leadership. I believe the
-                            best products emerge when teams have clarity of vision, autonomy to execute, and continuous
-                            feedback loops that keep us aligned with user needs.
-                        </p>
-                        <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-agdasima">
-                            Currently, I&apos;m focused on AI-powered tools at Applizy and data analytics initiatives at
-                            STAfrica, where I&apos;ve helped teams ship products that serve thousands of users while
-                            maintaining high quality standards.
+                    </div>
+
+                    {/* Core Skills */}
+                    <div className="mb-8">
+                        <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">Core Skills</h3>
+                        <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-agdasima">
+                            Python · SQL · Power BI · Figma AI · Lovable · Supabase · Zapier · Rapid POC Development ·
+                            Data Automation · Product Analytics · System Design
                         </p>
                     </div>
 
                     <div className="mt-8">
                         <Link
-                            href="/assets/natnael-endale-portfolio.pdf"
+                            href="/assets/Natnael_Portfolio.pdf"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-lg font-medium hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 font-manrope"
                         >
                             <Download className="w-5 h-5" />
@@ -44,186 +44,99 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* Guiding Values */}
-                                {/* Guiding Values */}
+                {/* Values */}
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold mb-8 font-manrope">
-                        Guiding Values
+                        Values
                     </h2>
+                    <div className="space-y-4">
+                        <div className="flex items-start gap-3">
+                            <span className="text-emerald-600 font-bold text-lg">1.</span>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Speed through iteration</p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-emerald-600 font-bold text-lg">2.</span>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Data clarity drives design</p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-emerald-600 font-bold text-lg">3.</span>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Build smart, not complex</p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-emerald-600 font-bold text-lg">4.</span>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Automation before repetition</p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-emerald-600 font-bold text-lg">5.</span>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Design that informs execution</p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Tech Stack */}
+                <section className="mb-16">
+                    <div className="flex items-center gap-3 mb-8">
+                        <span className="text-2xl">🧠</span>
+                        <h2 className="text-2xl font-bold font-manrope">Tech Stack</h2>
+                    </div>
+                    
                     <div className="grid md:grid-cols-2 gap-8">
                         <div>
-                            <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">
-                                People-Focused Leadership
+                            <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
+                                Data & Analytics
                             </h3>
-                            <p className="text-gray-600 leading-relaxed font-agdasima">
-                                I believe in leading with empathy and creating psychological safety where teams can thrive. 
-                                When people feel heard, valued, and empowered, they produce their best work and drive 
-                                meaningful innovation.
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                                Python · SQL · Power BI · Pandas
                             </p>
                         </div>
+                        
                         <div>
-                            <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">
-                                Customer-Centric Innovation
+                            <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
+                                Automation
                             </h3>
-                            <p className="text-gray-600 leading-relaxed font-agdasima">
-                                Every product decision should stem from genuine customer needs and pain points. 
-                                I prioritize continuous user research and data-driven insights to ensure we&apos;re 
-                                building solutions that create real value.
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                                Zapier · n8n · Supabase · API Integrations
                             </p>
                         </div>
+                        
                         <div>
-                            <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">
-                                Agile Excellence
+                            <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
+                                Prototyping & Design
                             </h3>
-                            <p className="text-gray-600 leading-relaxed font-agdasima">
-                                True agility goes beyond ceremonies it&apos;s about fostering continuous learning, 
-                                rapid iteration, and adaptive planning. I focus on delivering working solutions 
-                                frequently while maintaining quality and team velocity.
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                                Figma AI · Lovable · Galileo AI
                             </p>
                         </div>
+                        
                         <div>
-                            <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">
-                                Strategic Thinking
+                            <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
+                                Web Tools
                             </h3>
-                            <p className="text-gray-600 leading-relaxed font-agdasima">
-                                I balance long-term vision with short-term execution, ensuring every sprint 
-                                contributes to broader business objectives. Strategic alignment across teams 
-                                and stakeholders is crucial for sustainable growth.
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                                Next.js · TypeScript · Tailwind CSS · shadcn/ui
+                            </p>
+                        </div>
+                        
+                        <div className="md:col-span-2">
+                            <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
+                                Infrastructure
+                            </h3>
+                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                                GitHub Actions · Vercel · Replit
                             </p>
                         </div>
                     </div>
                 </section>
 
-                {/* Core PM Skills */}
-                                {/* Core PM Skills */}
-                <section className="mb-16">
-                    <h2 className="text-2xl font-bold mb-8 font-manrope">
-                        Core PM Skills
-                    </h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <BarChart3 className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Data-Driven Decision Making</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• Analytics & KPI Tracking</li>
-                                <li>• A/B Testing & Experimentation</li>
-                                <li>• User Research & Insights</li>
-                                <li>• Market Analysis</li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Users className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Cross-Functional Leadership</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• Team Coordination</li>
-                                <li>• Stakeholder Management</li>
-                                <li>• Conflict Resolution</li>
-                                <li>• Change Management</li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Target className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Strategic Product Planning</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• Roadmap Development</li>
-                                <li>• Feature Prioritization</li>
-                                <li>• Resource Allocation</li>
-                                <li>• Go-to-Market Strategy</li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Zap className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Agile Methodologies</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• Scrum & Kanban</li>
-                                <li>• Sprint Planning</li>
-                                <li>• Backlog Management</li>
-                                <li>• Continuous Improvement</li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Smartphone className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Technical Product Knowledge</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• System Architecture</li>
-                                <li>• API Integration</li>
-                                <li>• Database Design</li>
-                                <li>• Cloud Platforms</li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <MessageSquare className="w-8 h-8 text-emerald-700" />
-                            </div>
-                            <h3 className="text-lg font-semibold mb-3 font-manrope">Communication Excellence</h3>
-                            <ul className="text-gray-600 text-sm space-y-1 font-agdasima">
-                                <li>• Executive Presentations</li>
-                                <li>• Documentation</li>
-                                <li>• Workshop Facilitation</li>
-                                <li>• Public Speaking</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Leadership Approach */}
+                {/* Approach */}
                 <section>
-                    <h2 className="text-3xl font-bold mb-8 font-manrope">Leadership Approach</h2>
-                    <div className="space-y-6">
-                        <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
-                            <h3 className="text-xl font-semibold mb-3 font-manrope">Communication Cadence</h3>
-                            <p className="text-slate-600 dark:text-slate-400 mb-4 font-agdasima">
-                                I maintain regular touchpoints to ensure alignment and surface blockers early:
-                            </p>
-                            <ul className="space-y-2 text-slate-600 dark:text-slate-400 font-agdasima">
-                                <li className="flex items-start">
-                                    <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
-                                    <span>Daily standups (15 min, async-friendly)</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
-                                    <span>Weekly 1:1s with each team member</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
-                                    <span>Bi-weekly sprint planning and retrospectives</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
-                                    <span>Monthly stakeholder reviews with demos</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
-                            <h3 className="text-xl font-semibold mb-3 font-manrope">Delegation & Empowerment</h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
-                                I delegate outcomes, not tasks. I set clear success criteria, provide context and
-                                resources, then trust the team to find the best path. I&apos;m available for unblocking and
-                                course correction, but I avoid micromanagement. This builds ownership and develops the
-                                team&apos;s decision-making muscles.
-                            </p>
-                        </div>
-
-                        <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
-                            <h3 className="text-xl font-semibold mb-3 font-manrope">Cross-Timezone Collaboration</h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
-                                Having worked with teams across Africa, Europe, and Asia, I&apos;ve learned to design
-                                asynchronous workflows. I document decisions in Notion/Confluence, record Loom videos for
-                                complex topics, and ensure no one is blocked waiting for synchronous meetings. I schedule
-                                overlap hours for critical discussions but default to async to respect everyone&apos;s time.
-                            </p>
-                        </div>
+                    <h2 className="text-2xl font-bold mb-8 font-manrope">Approach</h2>
+                    <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg leading-relaxed">
+                            My approach combines data-driven insights with rapid iteration. I believe in building smart solutions 
+                            that scale through automation rather than complexity. Every product decision is backed by data, 
+                            every process is designed for efficiency, and every design choice informs better execution.
+                        </p>
                     </div>
                 </section>
             </div>

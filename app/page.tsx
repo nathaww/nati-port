@@ -18,19 +18,19 @@ export default function Home() {
           { label: "View Projects", href: "/projects", variant: "secondary" },
           {
             label: "GitHub",
-            href: "https://github.com/natnael",
+            href: "https://github.com/natnaelende",
             variant: "ghost",
             external: true,
           },
           {
             label: "LinkedIn",
-            href: "https://linkedin.com/in/natnael",
+            href: "https://linkedin.com/in/natnaelende",
             variant: "ghost",
             external: true,
           },
           {
             label: "Download PDF",
-            href: "/assets/natnael-endale-portfolio.pdf",
+            href: "/assets/Natnael_Portfolio.pdf",
             variant: "ghost",
           },
         ]}

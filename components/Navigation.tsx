@@ -32,7 +32,7 @@ export function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "px-1 lg:px-4 lg:py-2 rounded-lg font-agdasima text-sm lg:font-medium transition-colors",
+                  "px-1 lg:px-4 lg:py-2 rounded-lg font-agdasima text-sm md:text-lg lg:font-medium transition-colors",
                   "hover:bg-slate-100",
                   "focus:outline-none focus:ring-2 focus:ring-primary"
                 )}
