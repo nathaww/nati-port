@@ -34,7 +34,7 @@ export default function PreloaderWrapper({ children }: PreloaderWrapperProps) {
   return (
     <>
       {showPreloader && <Preloader onComplete={handlePreloaderComplete} />}
-      <div style={{ opacity: preloaderComplete ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
+      <div className='h-full w-full' style={{ opacity: preloaderComplete ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
         {children}
       </div>
     </>

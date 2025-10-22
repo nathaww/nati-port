@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased p-0 m-0 w-full h-full">
         <SmoothScrolling>
           <PreloaderWrapper>
-            {/* <Navigation /> */}
+            <Navigation />
             {children}
             <Footer />
           </PreloaderWrapper>
