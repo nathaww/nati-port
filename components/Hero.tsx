@@ -77,8 +77,8 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
 
 
           <EventBadge3D />
-          <h1 className="text-3xl md:text-6xl text-black font-manrope font-extrabold uppercase text-center">
-            Building smart, data-driven products with automation and design precision.
+          <h1 className="text-3xl px-1 md:text-6xl text-black font-manrope font-extrabold uppercase text-center">
+            Building smart, data driven products with automation and design precision.
           </h1>
           <div className="hidden md:flex flex-wrap gap-4">
             {ctas.map((cta) => (
@@ -111,7 +111,7 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
                 className={cn(
                   "inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2",
                   cta.variant === "primary" &&
-                  "bg-emerald-700 text-white hover:bg-emerald-800 focus:ring-emerald-500",
+                  "bg-primary text-white hover:bg-primary/90 focus:ring-primary",
                   cta.variant === "secondary" &&
                   "bg-black text-white hover:bg-white hover:text-black focus:ring-slate-500",
                   (!cta.variant || cta.variant === "ghost") &&

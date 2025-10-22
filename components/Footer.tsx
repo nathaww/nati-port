@@ -1,55 +1,70 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "./icons";
+import { Github, Linkedin, Mail, Download } from "./icons";
 
 export function Footer() {
   return (
-    <footer className="py-20 bg-black fixed bottom-0 w-full -z-10 min-h-screen flex justify-end items-end">
-      <div className="max-w-5xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+    <footer className="pt-20 bg-black fixed bottom-0 w-screen -z-10 min-h-screen flex justify-end items-end">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-2 w-full gap-8 mb-8">
           <div>
             <h3 className="text-3xl md:text-4xl uppercase mb-3 text-white font-extrabold font-manrope">
-              Let&apos;s build something insightful.
+              Let&apos;s build something efficient, automated, data-backed and designed to scale.
             </h3>
-            <p className="text-white mb-4 font-agdasima">
-              Open to new opportunities and collaborations in product management,
-              data analytics, and AI engineering.
+            <p className="text-lg text-slate-300 mb-6 font-agdasima">
+              &quot;Build fast. Learn faster. Automate everything.&quot;
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full font-medium "
+              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-full font-medium hover:bg-emerald-800 transition-colors font-manrope"
             >
               Get in touch
             </Link>
           </div>
           
-          <div className="flex flex-col justify-center">
-            <h4 className="font-semibold mb-3">Connect</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/natnael"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
-                aria-label="GitHub"
-              >
-                <Github className="w-6 h-6" />
-              </a>
-              <a
-                href="https://linkedin.com/in/natnael"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="mailto:natnael@example.com"
-                className="p-2 text-white hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
-                aria-label="Email"
-              >
-                <Mail className="w-6 h-6" />
-              </a>
+          <div className="flex flex-col justify-end md:items-center">
+            <h4 className="font-semibold mb-4 text-white font-manrope">Contact Options</h4>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-primary" />
+                <a
+                  href="mailto:natnael@endale.dev"
+                  className="text-white hover:text-primary transition-colors font-agdasima"
+                >
+                  natnael@endale.dev
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Linkedin className="w-5 h-5 text-primary" />
+                <a
+                  href="https://linkedin.com/in/natnaelende"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-primary transition-colors font-agdasima"
+                >
+                  linkedin.com/in/natnaelende
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Github className="w-5 h-5 text-primary" />
+                <a
+                  href="https://github.com/natnaelende"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-primary transition-colors font-agdasima"
+                >
+                  github.com/natnaelende
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Download className="w-5 h-5 text-primary" />
+                <a
+                  href="/assets/Natnael_Portfolio.pdf"
+                  target="_blank"
+                  className="text-white hover:text-primary transition-colors font-agdasima"
+                >
+                  Download Portfolio
+                </a>
+              </div>
             </div>
           </div>
         </div>

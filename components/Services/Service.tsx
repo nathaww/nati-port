@@ -30,7 +30,7 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
     const scale = useTransform(progress, range, [1, finalTargetScale]);
 
     return (
-        <div ref={container} className="cardContainer">
+        <div ref={container} className="cardContainer h-screen md:h-[80vh]">
             <motion.div
                 className="card bg-white border border-slate-500 rounded-[4rem] flex flex-col justify-between"
                 style={{
@@ -38,7 +38,7 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
                     top: isMobile ? `calc(-2vh + ${i * 15}px)` : `calc(-5vh + ${i * 35}px)`
                 }}
             >
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-4 lg:mb-6">
                     {icon && (
                         <div className="text-emerald-600">
                             {icon}
@@ -47,7 +47,7 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
                 </div>
                 <div className='flex flex-col md:flex-row justify-between w-full'>
                     <div className='w-full'>
-                        <h2 className='font-manrope text-black text-4xl md:text-6xl font-bold uppercase mb-6'>{title}</h2>
+                        <h2 className='font-manrope text-black text-4xl md:text-6xl font-bold uppercase mb-4 lg:mb-6'>{title}</h2>
                         <div className="body">
                             <div className="description">
                                 <p className='text-slate-600 font-agdasima text-lg md:text-2xl leading-relaxed'>{copy}</p>

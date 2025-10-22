@@ -56,8 +56,8 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 mb-12 font-agdasima">
-            <div className="col-span-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 font-agdasima">
+            <div className="col-span-12 md:col-span-6">
               <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Cross-Functional Leadership
               </h3>
@@ -76,7 +76,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="col-span-12 md:col-span-6">
               <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Results & KPIs
               </h3>

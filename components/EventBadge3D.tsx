@@ -31,7 +31,7 @@ type ExtendedRigidBody = RapierRigidBody & {
 export default function App() {
 
   return (
-    <div className="absolute inset-0 w-full h-full">
+    <div className="absolute inset-0 w-full h-full z-10">
       <Canvas camera={{ position: [0, 0, 13], fov: 25 }} gl={{ alpha: true }}>
         <ambientLight intensity={Math.PI} />
         <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
@@ -156,16 +156,17 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
 
             {/* HTML Content Overlay */}
             <Html
-              position={[0, 0.5, 0.1]}
+              position={[0, 0.5, 0]}
               center
               distanceFactor={1.3}
               transform
               style={{
                 pointerEvents: 'none',
                 userSelect: 'none',
+                zIndex: 1,
               }}
             >
-              <div className="flex flex-col items-center gap-3 w-44">
+              <div className="flex flex-col items-center gap-3 w-44 relative z-1">
                 <div className="size-32 rounded-full overflow-hidden border-2 border-white">
                   <Image
                     src="/imgs/profile-pic.jpg"

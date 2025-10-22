@@ -15,9 +15,15 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-xl font-bold hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+            className="hidden lg:flex text-xl font-manrope font-bold hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
           >
             Natnael Endale
+          </Link>
+          <Link
+            href="/"
+            className="flex lg:hidden text-xl font-manrope font-bold hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+          >
+            NE
           </Link>
           
           <div className="flex gap-1">
@@ -26,9 +32,9 @@ export function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-                  "hover:bg-slate-100 dark:hover:bg-slate-800",
-                  "focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  "px-1 lg:px-4 lg:py-2 rounded-lg font-agdasima text-sm lg:font-medium transition-colors",
+                  "hover:bg-slate-100",
+                  "focus:outline-none focus:ring-2 focus:ring-primary"
                 )}
               >
                 {link.label}
