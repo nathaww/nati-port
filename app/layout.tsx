@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="py-0">
-      <PreloaderWrapper>
         <body className="antialiased py-0">
+      <PreloaderWrapper>
           <SmoothScrolling>
             <Navigation />
             {children}
             <Footer />
           </SmoothScrolling>
-        </body>
       </PreloaderWrapper>
+        </body>
     </html>
   );
 }
