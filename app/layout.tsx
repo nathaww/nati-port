@@ -20,11 +20,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="bg-black">
       <body className="antialiased p-0 m-0 w-full h-full">
         <SmoothScrolling>
-          <PreloaderWrapper>
+          {/* <PreloaderWrapper> */}
             <Navigation />
             {children}
             <Footer />
-          </PreloaderWrapper>
+          {/* </PreloaderWrapper> */}
         </SmoothScrolling>
       </body>
     </html>
