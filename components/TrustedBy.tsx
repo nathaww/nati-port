@@ -13,7 +13,7 @@ const imageLogos = [
 
 const TrustedBy = () => {
     return (
-        <div className="relative overflow-hidden bg-white h-auto flex flex-col justify-center items-center rounded-b-[4rem] pt-10 pb-20">
+        <div className="relative overflow-hidden bg-white h-auto flex flex-col justify-center items-center rounded-b-[4rem] pt-10 pb-20 mb-[50vh] z-20">
             <h3 className="text-3xl md:text-4xl font-manrope font-extrabold mb-8">Trusted By</h3>
             <LogoLoop
                 logos={imageLogos}

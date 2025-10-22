@@ -1,8 +1,9 @@
+import { Footer } from "@/components/Footer";
+import { Navigation } from "@/components/Navigation";
+import PreloaderWrapper from "@/components/PreloaderWrapper";
+import SmoothScrolling from "@/utils/SmoothScroll";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
-import PreloaderWrapper from "@/components/PreloaderWrapper";
 
 export const metadata: Metadata = {
   title: "Natnael Endale - Product Manager",
@@ -19,9 +20,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="antialiased">
         <PreloaderWrapper>
-          <Navigation />
-          {children}
-          <Footer />
+          <SmoothScrolling>
+            <Navigation />
+            {children}
+            <Footer />
+          </SmoothScrolling>
         </PreloaderWrapper>
       </body>
     </html>
