@@ -1,25 +1,13 @@
-"use client"
-import { DomainCard } from "@/components/DomainCard";
 import { Hero } from "@/components/Hero";
-import * as Icons from "@/components/icons";
 import { Metric } from "@/components/Metric";
 import { ProjectCard } from "@/components/ProjectCard";
+import Service from "@/components/Service";
 import TrustedBy from "@/components/TrustedBy";
 import projectsData from "@/data/projects.json";
-import { domainAreas } from "@/lib/data";
 import { Project } from "@/lib/types";
 
 const projects = projectsData as Project[];
 const featuredProjects = projects.filter((p) => p.featured);
-
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  BarChart3: Icons.BarChart3,
-  Brain: Icons.Brain,
-  Globe: Icons.Globe,
-  Smartphone: Icons.Smartphone,
-  Palette: Icons.Palette,
-  GitBranch: Icons.GitBranch,
-};
 
 export default function Home() {
   return (
@@ -48,34 +36,7 @@ export default function Home() {
         ]}
       />
 
-      <section className="py-20 px-4 bg-white dark:bg-slate-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6">
-            <h2 className="text-4xl md:text-5xl mb-6 text-black font-manrope font-extrabold uppercase">
-              Areas of Ownership
-            </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-agdasima">
-              Leading cross-functional teams across the full product lifecycle.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-            {domainAreas.map((domain, index) => {
-              const IconComponent = iconMap[domain.icon] || Icons.Globe;
-              return (
-                <DomainCard
-                  id={index}
-                  key={domain.domain}
-                  icon={<IconComponent className="w-8 h-8" />}
-                  title={domain.title}
-                  blurb={domain.blurb}
-                  metrics={domain.metrics}
-                  href={`/projects?domain=${domain.domain}`}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <Service />
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -90,8 +51,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="w-full h-full bg-primary/30 px-4 py-16 rounded-[4rem]">
+      <section className="bg-white px-4 py-16">
+
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
@@ -135,15 +96,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-slate-200 dark:border-slate-800">
-            <Metric label="Products Shipped" value="15+" />
-            <Metric label="Team Members Led" value="25+" />
-            <Metric label="Stakeholders Managed" value="30+" />
-            <Metric label="On-Time Delivery" value="95%" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-slate-200 dark:border-slate-800">
+              <Metric label="Products Shipped" value="15+" />
+              <Metric label="Team Members Led" value="25+" />
+              <Metric label="Stakeholders Managed" value="30+" />
+              <Metric label="On-Time Delivery" value="95%" />
+            </div>
           </div>
-        </div>
         </div>
       </section>
 

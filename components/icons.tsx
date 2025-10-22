@@ -83,3 +83,49 @@ export const Download = ({ className }: { className?: string }) => (
     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
+
+export const Database = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="5" rx="9" ry="3" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+export const Workflow = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <rect width="8" height="8" x="3" y="3" rx="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M7 11v4a2 2 0 0 0 2 2h4" strokeLinecap="round" strokeLinejoin="round"/>
+    <rect width="8" height="8" x="13" y="13" rx="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+export const Zap = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+export const Code = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <polyline points="16 18 22 12 16 6" strokeLinecap="round" strokeLinejoin="round"/>
+    <polyline points="8 6 2 12 8 18" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+export const Figma = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+export const TrendingUp = ({ className }: { className?: string }) => (
+  <svg className={className} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" strokeLinecap="round" strokeLinejoin="round"/>
+    <polyline points="16 7 22 7 22 13" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);

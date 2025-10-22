@@ -165,7 +165,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 userSelect: 'none',
               }}
             >
-              <div className="flex flex-col items-center gap-3 w-40">
+              <div className="flex flex-col items-center gap-3 w-44">
                 <div className="size-32 rounded-full overflow-hidden border-2 border-white">
                   <Image
                     src="/imgs/profile.png"

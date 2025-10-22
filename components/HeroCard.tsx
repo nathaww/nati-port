@@ -9,8 +9,9 @@ const HeroCard = () => {
                 <TextRotate
                     texts={[
                         "Product Manager",
-                        "AI & Data Systems",
-                        "Team Builder",
+                        "AI Systems",
+                        "Data Analytics",
+                        "Web & Mobile Strategy"
                     ]}
                     mainClassName="text-black text-sm font-manrope px-2 md:px-2 bg-white overflow-hidden py-0.5 md:py-2 justify-center rounded-full"
                     staggerFrom={"last"}

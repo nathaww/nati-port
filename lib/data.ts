@@ -2,9 +2,9 @@ import { DomainMetrics } from "./types";
 
 export const domainAreas: DomainMetrics[] = [
   {
-    title: "Data Analytics & BI",
-    icon: "BarChart3",
-    blurb: "Building automated reporting pipelines and executive dashboards that drive data-informed decision-making.",
+    title: "Data & Analytics",
+    icon: "Database",
+    blurb: "Advanced modeling with Python, SQL, and Power BI for insight-driven decisions.",
     metrics: [
       "80% reduction in manual entry",
       "20+ KPIs tracked across 5 departments",
@@ -13,58 +13,58 @@ export const domainAreas: DomainMetrics[] = [
     domain: "data"
   },
   {
-    title: "AI Engineering",
-    icon: "Brain",
-    blurb: "Leading AI product development at Applizy, creating intelligent tools that augment human workflows.",
+    title: "Automation & Workflow Design",
+    icon: "Workflow",
+    blurb: "Using Zapier, n8n, and Supabase to automate reporting, app logic, and user flows.",
     metrics: [
       "60% reduction in completion time",
       "95% positive beta feedback",
       "40% uplift in conversion"
     ],
-    domain: "ai"
+    domain: "automation"
   },
   {
-    title: "Web Development",
-    icon: "Globe",
-    blurb: "Managing web platform initiatives with focus on performance, scalability, and developer experience.",
+    title: "Rapid POC Creation",
+    icon: "Zap",
+    blurb: "Figma AI, Lovable, and Replit for mockups, wireframes, and prototypes in hours.",
     metrics: [
       "Sub-2.1s average load",
       "42% faster feature delivery",
       "99.9% uptime"
     ],
-    domain: "web"
+    domain: "poc"
   },
   {
-    title: "Mobile Development",
-    icon: "Smartphone",
-    blurb: "Driving mobile product strategy from concept to launch, optimizing for performance and user engagement.",
+    title: "Web Development",
+    icon: "Code",
+    blurb: "Front-end experimentation with Next.js, TypeScript, and Tailwind for user-facing POCs.",
     metrics: [
       "900+ DAU month-1",
       "Release cycle: 10 → 6 days",
       "Crash rate ≤ 0.3%"
     ],
-    domain: "mobile"
+    domain: "web"
   },
   {
-    title: "UI/UX & Brand Design",
-    icon: "Palette",
-    blurb: "Championing design systems and user-centered approaches that balance aesthetics with accessibility.",
+    title: "UX & Design Systems",
+    icon: "Figma",
+    blurb: "Translating ideas into functional wireframes with Figma AI and Galileo.",
     metrics: [
       "50% faster design-to-dev handoff",
       "Satisfaction: 3.8 → 4.6",
       "WCAG AA compliance"
     ],
-    domain: "uiux"
+    domain: "ux"
   },
   {
-    title: "QA & CI/CD",
-    icon: "GitBranch",
-    blurb: "Implementing automated testing and deployment pipelines that ensure quality at velocity.",
+    title: "Business Enablement",
+    icon: "TrendingUp",
+    blurb: "Connecting data and automation to improve efficiency and decision-making.",
     metrics: [
       "28% fewer release defects",
       "99.9% build success",
       "35% shorter regression suites"
     ],
-    domain: "qa"
+    domain: "business"
   }
 ];

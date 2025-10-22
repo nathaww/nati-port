@@ -77,8 +77,8 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
 
 
           <EventBadge3D />
-          <h1 className="text-4xl md:text-7xl text-black font-manrope font-extrabold uppercase text-center">
-            Building data driven products with people first leadership.
+          <h1 className="text-3xl md:text-6xl text-black font-manrope font-extrabold uppercase text-center">
+            Building smart, data-driven products with automation and design precision.
           </h1>
           <div className="hidden md:flex flex-wrap gap-4">
             {ctas.map((cta) => (
