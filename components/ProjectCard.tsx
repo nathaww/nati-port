@@ -43,7 +43,7 @@ export function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <article className="group border border-slate-200 bg-white overflow-hidden cursor-pointer transition-all">
+    <article className="group border border-slate-500 bg-white overflow-hidden rounded-[4rem] cursor-pointer transition-all">
       {image && (
         <div className="relative w-full h-48 bg-slate-100 dark:bg-slate-800 overflow-hidden">
           <Image

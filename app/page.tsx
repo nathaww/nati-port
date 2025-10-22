@@ -40,7 +40,7 @@ export default function Home() {
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-manrope">
+          <h2 className="text-3xl md:text-4xl uppercase font-extrabold mb-8 font-manrope">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -51,18 +51,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white px-4 py-16">
-
+      <section className="bg-white px-4 py-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-manrope">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 font-agdasima">
+            <div className="col-span-6">
+              <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Cross-Functional Leadership
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-agdasima">
+              <ul className="space-y-3 text-slate-600 text-lg font-agdasima">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Led teams of 5-8 across engineering, design, and data analytics</span>
@@ -78,10 +77,10 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400 font-manrope">
+              <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Results & KPIs
               </h3>
-              <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-agdasima">
+              <ul className="space-y-3 text-slate-600 text-lg font-agdasima">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-500 mr-2">•</span>
                   <span>Shipped 12+ major features with 95%+ on-time delivery</span>
@@ -97,7 +96,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-slate-200 dark:border-slate-800">
+            <div className="grid grid-cols-2 md:grid-cols-4 col-span-12 gap-8 pt-12 w-full border-t border-slate-200">
               <Metric label="Products Shipped" value="15+" />
               <Metric label="Team Members Led" value="25+" />
               <Metric label="Stakeholders Managed" value="30+" />

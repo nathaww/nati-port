@@ -54,7 +54,13 @@ const ServiceCard = ({ title, copy, icon, i, progress, range, targetScale }: Ser
                             </div>
                         </div>
                     </div>
-                    <button className='bg-primary font-manrope text-white font-bold md:size-36 text-sm rounded-full py-4 lg:py-0 mt-6 lg:mt-0'>Show Related Projects</button>
+
+                    <button className='circle-button bg-primary cursor-pointer font-manrope text-white font-bold md:size-36 text-sm rounded-full py-4 lg:py-0 mt-6 lg:mt-0'>
+                        <span className="relative z-10">
+                            Show Related Projects
+                        </span>
+                        <span className="circle-bg" />
+                    </button>
                 </div>
             </motion.div>
         </div>

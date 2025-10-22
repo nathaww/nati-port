@@ -1,5 +1,5 @@
 .cardContainer {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,25 @@
 
 .cardContainer .card .body .imageContainer img {
   object-fit: cover;
+}
+
+/* Button hover animation */
+.circle-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-button .circle-bg {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  border-radius: 9999px;
+  transition: all 0.5s ease-out;
+  clip-path: circle(0% at 50% 50%);
+}
+
+.circle-button:hover .circle-bg {
+  clip-path: circle(150% at 50% 50%);
 }
 
 /* Mobile responsive styles */

@@ -13,7 +13,7 @@ const HeroCard = () => {
                         "Data Analytics",
                         "Web & Mobile Strategy"
                     ]}
-                    mainClassName="text-black text-sm font-manrope px-2 md:px-2 bg-white overflow-hidden py-0.5 md:py-2 justify-center rounded-full"
+                    mainClassName="text-black text-m font-agdasima px-2 md:px-2 bg-white overflow-hidden py-0.5 md:py-2 justify-center rounded-full"
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
