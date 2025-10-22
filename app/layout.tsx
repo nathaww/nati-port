@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="p-0 m-0 bg-red-800">
+    <html lang="en" className="bg-red-800">
       <body className="antialiased p-0 m-0">
         <PreloaderWrapper>
           <SmoothScrolling>
-            <Navigation />
+            {/* <Navigation /> */}
             {children}
             <Footer />
           </SmoothScrolling>
