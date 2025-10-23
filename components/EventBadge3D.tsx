@@ -169,7 +169,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
               <div className="flex flex-col items-center gap-3 w-44 relative z-1">
                 <div className="size-32 rounded-full overflow-hidden border-2 border-white">
                   <Image
-                    src="/imgs/profile-pic.jpg"
+                    src="/imgs/profile.jpeg"
                     alt="Natnael Profile"
                     width={80}
                     height={80}
