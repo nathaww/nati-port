@@ -25,6 +25,10 @@ export default function PreloaderWrapper({ children }: PreloaderWrapperProps) {
     sessionStorage.setItem('preloaderShown', 'true');
     setTimeout(() => {
       setShowPreloader(false);
+      // Notify any listeners that the preloader has finished
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('preloaderComplete'));
+      }
     }, 100);
   };
 

@@ -1,3 +1,4 @@
+"use client"
 import { Environment, Html, Lightformer, useGLTF, useTexture } from '@react-three/drei'
 import { Canvas, extend, ThreeEvent, useFrame, useThree } from '@react-three/fiber'
 import { BallCollider, CuboidCollider, Physics, RapierRigidBody, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
@@ -29,6 +30,31 @@ type ExtendedRigidBody = RapierRigidBody & {
 }
 
 export default function App() {
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    // Small helper to set ready with a tiny delay so the preloader DOM is fully removed
+    const markReady = (delay = 200) => setTimeout(() => setReady(true), delay)
+
+    // If preloader has already been shown in this session, mount after a short delay
+    const hasSeenPreloader = typeof window !== 'undefined' && sessionStorage.getItem('preloaderShown')
+    if (hasSeenPreloader) {
+      const t0 = markReady(200)
+      return () => clearTimeout(t0 as unknown as number)
+    }
+
+    // Otherwise wait for the preloaderComplete event
+    const handler = () => markReady(200)
+    window.addEventListener('preloaderComplete', handler)
+    // Fallback: after 6s ensure it mounts (defensive)
+    const t = setTimeout(() => markReady(200), 6000)
+    return () => {
+      window.removeEventListener('preloaderComplete', handler)
+      clearTimeout(t)
+    }
+  }, [])
+
+  if (!ready) return null
 
   return (
     <div className="absolute inset-0 w-full h-full z-10">
