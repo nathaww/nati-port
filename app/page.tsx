@@ -11,7 +11,7 @@ const featuredProjects = projects.filter((p) => p.featured);
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main>
       <Hero
         ctas={[
           { label: "Contact", href: "/contact", variant: "primary" },
