@@ -52,7 +52,6 @@
 @media (max-width: 768px) {
   .cardContainer {
     height: auto;
-    min-height: 80vh;
     padding: 0 0;
   }
 

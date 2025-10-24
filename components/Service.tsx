@@ -26,7 +26,7 @@ const Service = () => {
                     </p>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-3 max-w-7xl mx-auto'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 max-w-7xl mx-auto'>
                 {
                     domainAreas.map((domain, i) => {
                         const IconComponent = iconMap[domain.icon] || Icons.Code;

@@ -94,7 +94,7 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
                   cta.variant === "secondary" &&
                   "bg-black text-white hover:bg-white hover:text-black focus:ring-slate-500",
                   (!cta.variant || cta.variant === "ghost") &&
-                  "border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:ring-slate-500"
+                  "border border-slate-300 text-slate-700 hover:bg-slate-100 focus:ring-slate-500"
                 )}
               >
                 {cta.label}
@@ -113,9 +113,9 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
                   cta.variant === "primary" &&
                   "bg-emerald-700 text-white hover:bg-emerald-800 focus:ring-emerald-500",
                   cta.variant === "secondary" &&
-                  "bg-black text-white hover:bg-white hover:text-black focus:ring-slate-500",
+                  "bg-black text-white hover:bg-black/90 hover:text-black",
                   (!cta.variant || cta.variant === "ghost") &&
-                  "border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:ring-slate-500"
+                  "border border-slate-300 text-slate-700 hover:bg-slate-100 focus:ring-slate-500"
                 )}
               >
                 {cta.label}
