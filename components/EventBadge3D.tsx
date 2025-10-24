@@ -54,6 +54,8 @@ export default function App() {
     }
   }, [])
 
+  
+
   if (!ready) return null
 
   return (
@@ -83,6 +85,16 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const card = useRef<RapierRigidBody>(null!)
   const connector = useRef<THREE.Mesh>(null!)
 
+  const [isInteractive, setIsInteractive] = useState(true)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || (window.matchMedia && window.matchMedia('(pointer: coarse)').matches)
+    const isSmall = window.innerWidth <= 768
+    // Consider mobile if touch capable OR small viewport
+    setIsInteractive(!(isTouch || isSmall))
+  }, [])
+
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3() // prettier-ignore
   const segmentProps = { type: 'dynamic' as const, canSleep: true, colliders: false as const, angularDamping: 2, linearDamping: 2 }
   const { nodes, materials } = useGLTF('https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb') as unknown as GLTFResult
@@ -98,11 +110,12 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   useSphericalJoint(j3, card, [[0, 0, 0], [0, 1.2, 0]]) // prettier-ignore
 
   useEffect(() => {
+    if (!isInteractive) return
     if (hovered) {
       document.body.style.cursor = dragged ? 'grabbing' : 'grab'
       return () => void (document.body.style.cursor = 'auto')
     }
-  }, [hovered, dragged])
+  }, [hovered, dragged, isInteractive])
 
   useFrame((state, delta) => {
     if (dragged) {
@@ -156,18 +169,23 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
           <group
             scale={2}
             position={[0, -1.2, -0.05]}
-            onPointerOver={() => hover(true)}
-            onPointerOut={() => hover(false)}
-            onPointerUp={(e: ThreeEvent<PointerEvent>) => {
-              const target = e.target as HTMLElement
-              target?.releasePointerCapture(e.pointerId)
-              drag(false)
-            }}
-            onPointerDown={(e: ThreeEvent<PointerEvent>) => {
-              const target = e.target as HTMLElement
-              target?.setPointerCapture(e.pointerId)
-              drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
-            }}>
+            {...(isInteractive
+              ? {
+                  onPointerOver: () => hover(true),
+                  onPointerOut: () => hover(false),
+                  onPointerUp: (e: ThreeEvent<PointerEvent>) => {
+                    const target = e.target as HTMLElement
+                    target?.releasePointerCapture(e.pointerId)
+                    drag(false)
+                  },
+                  onPointerDown: (e: ThreeEvent<PointerEvent>) => {
+                    const target = e.target as HTMLElement
+                    target?.setPointerCapture(e.pointerId)
+                    drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
+                  },
+                }
+              : {})}
+          >
             <mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial
                 color="#ffffff"
@@ -193,7 +211,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
               }}
             >
               <div className="flex flex-col items-center gap-3 w-44 relative z-1">
-                <div className="size-32 rounded-full overflow-hidden border-2 border-white">
+                <div className="size-28 md:size-32 rounded-full overflow-hidden border-2 border-white">
                   <Image
                     src="/imgs/profile.jpeg"
                     alt="Natnael Profile"
@@ -202,7 +220,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className='text-black font-manrope font-extrabold '>Natnael Endale</p>
+                <p className='text-black text-sm md:text-base font-manrope font-extrabold '>Natnael Endale</p>
                 <HeroCard />
               </div>
             </Html>
