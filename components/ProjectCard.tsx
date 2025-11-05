@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "./icons";
+import { useState } from "react";
 
 type ProjectCardProps = {
   title: string;
@@ -24,12 +25,12 @@ const domainLabels: Record<string, string> = {
 };
 
 const domainColors: Record<string, string> = {
-  ai: "bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
-  data: "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
-  web: "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400",
-  mobile: "bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-400",
-  uiux: "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
-  qa: "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400",
+  ai: "bg-purple-100 text-purple-700",
+  data: "bg-blue-100 text-blue-700",
+  web: "bg-green-100 text-green-700",
+  mobile: "bg-pink-100 text-pink-700",
+  uiux: "bg-amber-100 text-amber-700",
+  qa: "bg-slate-100 text-slate-700",
 };
 
 export function ProjectCard({
@@ -42,19 +43,38 @@ export function ProjectCard({
   links,
   image,
 }: ProjectCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <article className="group border border-slate-500 bg-white overflow-hidden rounded-[4rem] cursor-pointer transition-all h-[70vh] ">
-      {image && (
-        <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
+      <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
+        {image && !imageError ? (
           <Image
             src={image}
             alt={title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            onError={() => setImageError(true)}
           />
-        </div>
-      )}
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+            <svg
+              className="w-16 h-16 text-slate-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+        )}
+      </div>
       <div className="p-6">
         <div className="flex flex-wrap gap-2 mb-3">
           {domains.map((domain) => (

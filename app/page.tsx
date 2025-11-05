@@ -64,7 +64,7 @@ export default function Home() {
               <ul className="space-y-3 text-slate-600 text-lg font-agdasima">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Shipped 12+ major features with 95%+ on-time delivery</span>
+                  <span>Shipped 20+ major features with 95%+ on-time delivery</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>

@@ -22,42 +22,333 @@
     "featured": true
   },
   {
-    "slug": "stafrica-data-dashboard",
-    "title": "STAfrica KPI & Analytics Dashboards",
-    "domains": ["data"],
-    "role": "PM / Data Lead",
-    "team": "2 Data Analysts, 1 BI Developer",
-    "stack": ["Power BI", "Python", "SQL", "Azure"],
+    "slug": "rootd-anxiety-app",
+    "title": "Rootd: Panic Attacks & Anxiety Support",
+    "domains": ["mobile"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Backend Engineer, 1 UX Designer",
+    "stack": ["Flutter", "Firebase", "Cloud Functions", "Dart"],
     "outcomes": [
-      "Unified executive dashboard with 20+ KPIs across 5 departments",
-      "80% reduction in manual reporting overhead",
-      "Weekly automated refresh pipeline",
-      "35% faster decision cycles for leadership"
+      "Led full product lifecycle from feature design to maintenance",
+      "Supported users with anxiety and panic attacks through evidence-based tools",
+      "Integrated real-time crisis support and guided exercises",
+      "Maintained high user engagement and positive app store ratings"
     ],
     "links": [
       {
-        "label": "GitHub",
-        "href": "https://github.com/natnael/retail_kpi_pipeline"
+        "label": "App Store",
+        "href": "https://apps.apple.com/ca/app/rootd-panic-attacks-anxiety/id1289018369"
       }
     ],
-    "image": "/projects/bi-dashboard.png",
+    "image": "/projects/rootd-app.png",
     "featured": true
   },
   {
-    "slug": "mobile-app-ecommerce",
-    "title": "E-Commerce Mobile Platform",
+    "slug": "taxiye-ride-hailing",
+    "title": "Taxiye: Ride-Hailing Platform",
     "domains": ["mobile"],
     "role": "Product Manager",
-    "team": "2 Mobile Devs, 1 Backend Dev, 1 Designer",
-    "stack": ["React Native", "Node.js", "PostgreSQL", "Firebase"],
+    "team": "3 Mobile Developers, 2 Backend Engineers, 1 Designer",
+    "stack": ["React Native", "Node.js", "MongoDB", "Google Maps API"],
     "outcomes": [
-      "900+ DAU within first month",
-      "Release cycle reduced from 10 to 6 days",
-      "Crash rate maintained at ≤ 0.3%",
-      "4.5★ average rating on app stores"
+      "Managed end-to-end development of driver and passenger apps",
+      "Directed design, release cycles, and QA processes",
+      "Implemented real-time matching and GPS tracking",
+      "Launched in multiple cities with scalable architecture"
     ],
-    "links": [],
-    "image": "/projects/mobile-app.png",
+    "links": [
+      {
+        "label": "App Store",
+        "href": "https://apps.apple.com/us/app/taxiye-passenger/id1455202776"
+      }
+    ],
+    "image": "/projects/taxiye-app.png",
+    "featured": true
+  },
+  {
+    "slug": "michu-microloan",
+    "title": "Michu: Offline-First Microloan Platform",
+    "domains": ["mobile"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Backend Engineer, 1 Designer",
+    "stack": ["Flutter", "SQLite", "REST API", "Firebase"],
+    "outcomes": [
+      "Oversaw product strategy for offline-first microloan app",
+      "Built for rural users with limited connectivity",
+      "Drove UX optimization, technical roadmap, and launch execution",
+      "Enabled financial inclusion for underserved communities"
+    ],
+    "links": [
+      {
+        "label": "Play Store",
+        "href": "https://play.google.com/store/apps/details?id=com.kifiya.digital.lending&hl=en"
+      }
+    ],
+    "image": "/projects/michu-app.png",
+    "featured": false
+  },
+  {
+    "slug": "tow-company-driver-app",
+    "title": "Tow Company Driver App",
+    "domains": ["mobile", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Designer",
+    "stack": ["React Native", "Firebase", "Figma"],
+    "outcomes": [
+      "Directed design and development of driver-focused platform",
+      "Enabled job tracking, inspections, and real-time dispatch updates",
+      "Improved driver efficiency and job completion rates",
+      "Streamlined communication between drivers and dispatch"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/tow-app.png",
+    "featured": false
+  },
+  {
+    "slug": "hoomez-manufacturing-sales",
+    "title": "Hoomez: Manufacturing Sales Platform",
+    "domains": ["mobile", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Designer",
+    "stack": ["Flutter", "Figma", "REST API"],
+    "outcomes": [
+      "Managed product design for manufacturing-focused sales platform",
+      "Improved product display, order flow, and customer engagement",
+      "Enhanced B2B sales process with streamlined catalog browsing",
+      "Increased order conversion through optimized UX"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/hoomez-app.png",
+    "featured": false
+  },
+  {
+    "slug": "highschool-learning-app",
+    "title": "AI-Powered High School Learning App",
+    "domains": ["mobile", "ai", "uiux"],
+    "role": "Product Manager",
+    "team": "2 AI Engineers, 2 Mobile Developers, 1 Designer",
+    "stack": ["Flutter", "GPT API", "Firebase", "Figma"],
+    "outcomes": [
+      "Led creation of AI-powered learning app with interactive tutoring",
+      "Integrated quizzes and progress tracking to boost student outcomes",
+      "Personalized learning paths based on student performance",
+      "Improved engagement through gamification and adaptive content"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/learning-app.png",
+    "featured": false
+  },
+  {
+    "slug": "getzjob-social-recruiting",
+    "title": "GetzJob: Social Job-Seeking Platform",
+    "domains": ["mobile", "uiux"],
+    "role": "Product Manager",
+    "team": "3 Mobile Developers, 1 Designer",
+    "stack": ["React Native", "Node.js", "MongoDB", "Figma"],
+    "outcomes": [
+      "Oversaw product vision for social job-seeking platform",
+      "Integrated networking, listings, and skill-based recommendations",
+      "Improved job discovery through social connections",
+      "Enhanced candidate-employer matching algorithms"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/getzjob-app.png",
+    "featured": false
+  },
+  {
+    "slug": "soccer-performance-app",
+    "title": "Soccer Performance Tracking App",
+    "domains": ["mobile", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Designer",
+    "stack": ["Flutter", "Firebase", "Figma"],
+    "outcomes": [
+      "Designed and managed performance platform for athletes",
+      "Enabled training planning, progress monitoring, and key metrics tracking",
+      "Improved athlete performance through data-driven insights",
+      "Integrated goal setting and achievement tracking"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/soccer-app.png",
+    "featured": false
+  },
+  {
+    "slug": "mela-personal-finance",
+    "title": "Mela: Personal Finance Management",
+    "domains": ["mobile", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Mobile Developers, 1 Designer",
+    "stack": ["React Native", "Firebase", "Figma"],
+    "outcomes": [
+      "Directed UX and product flow for personal finance app",
+      "Simplified budgeting, expense tracking, and savings management",
+      "Increased user financial literacy through intuitive design",
+      "Automated expense categorization and budget alerts"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/mela-app.png",
+    "featured": false
+  },
+  {
+    "slug": "infnova-lms-landing",
+    "title": "Infnova LMS Landing Page",
+    "domains": ["web", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Frontend Developers, 1 Designer",
+    "stack": ["Next.js", "Tailwind CSS", "Figma"],
+    "outcomes": [
+      "Led product design for responsive LMS platform site",
+      "Showcased features and drove user conversion through clear UX hierarchy",
+      "Improved lead generation with optimized conversion funnels",
+      "Enhanced brand visibility and credibility"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/infnova-web.png",
+    "featured": false
+  },
+  {
+    "slug": "laundry-management-saas",
+    "title": "Laundry Management SaaS Platform",
+    "domains": ["web", "uiux"],
+    "role": "Product Manager",
+    "team": "3 Full-stack Developers, 1 Designer",
+    "stack": ["React", "Node.js", "PostgreSQL", "Figma"],
+    "outcomes": [
+      "Managed end-to-end design of SaaS web platform",
+      "Streamlined operations, orders, payments, and client communication",
+      "Reduced operational overhead by 40% for laundry businesses",
+      "Implemented automated invoicing and customer notifications"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/laundry-saas.png",
+    "featured": false
+  },
+  {
+    "slug": "planz-luxury-wellness",
+    "title": "Planz: Luxury Wellness & Recreation",
+    "domains": ["web", "uiux"],
+    "role": "Product Manager",
+    "team": "2 Frontend Developers, 1 Designer",
+    "stack": ["Next.js", "Tailwind CSS", "Figma"],
+    "outcomes": [
+      "Oversaw design and UX for luxury-focused website",
+      "Highlighted water parks, jacuzzis, and wellness installations",
+      "Emphasized innovation and premium brand positioning",
+      "Increased customer inquiries by 35% through improved UX"
+    ],
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
+      }
+    ],
+    "image": "/projects/planz-web.png",
+    "featured": false
+  },
+  {
+    "slug": "financial-insights-powerbi",
+    "title": "Financial Insights Dashboard",
+    "domains": ["data"],
+    "role": "PM / Data Lead",
+    "team": "2 Data Analysts, 1 BI Developer",
+    "stack": ["Power BI", "DAX", "SQL", "Excel"],
+    "outcomes": [
+      "Designed comprehensive Power BI dashboard covering Income Statement, Balance Sheet, Cash Flow",
+      "Focused on executive-level visualization and year-over-year analysis",
+      "Implemented drill-down interactivity for decision-makers",
+      "Enabled data-driven financial planning and forecasting"
+    ],
+    "links": [
+      {
+        "label": "View Dashboard",
+        "href": "https://app.powerbi.com/view?r=eyJrIjoiOWU2MTA3ZjEtMmFmNS00OWU2LThjZDctYWM5YjE2ZmZkMTVlIiwidCI6ImNjYzExNDA5LTBlYTMtNGE4Ny05M2VhLTk2ODdmM2RhYTczZiJ9"
+      }
+    ],
+    "image": "/projects/financial-dashboard.png",
+    "featured": true
+  },
+  {
+    "slug": "pizza-sales-powerbi",
+    "title": "Pizza Sales Analytics Dashboard",
+    "domains": ["data"],
+    "role": "PM / Data Analyst",
+    "team": "1 Data Analyst, 1 BI Developer",
+    "stack": ["Power BI", "DAX", "SQL"],
+    "outcomes": [
+      "Led design and analysis of interactive sales performance dashboard",
+      "Visualized peak hours, customer preferences, and order trends",
+      "Provided insights on top-selling items and category performance",
+      "Optimized business decisions through data-driven recommendations"
+    ],
+    "links": [
+      {
+        "label": "View Dashboard",
+        "href": "https://app.powerbi.com/view?r=eyJrIjoiOWYzMmVhNmItNThjMi00ZDE4LTg5ZGEtNDBhMDZiOGVjZjMxIiwidCI6ImNjYzExNDA5LTBlYTMtNGE4Ny05M2VhLTk2ODdmM2RhYTczZiJ9"
+      }
+    ],
+    "image": "/projects/pizza-dashboard.png",
+    "featured": false
+  },
+  {
+    "slug": "stafrica-recruiting-powerbi",
+    "title": "STAfrica Recruiting Analytics Dashboard",
+    "domains": ["data"],
+    "role": "PM / Data Lead",
+    "team": "2 Data Analysts, 1 BI Developer",
+    "stack": ["Power BI", "DAX", "SQL", "Azure"],
+    "outcomes": [
+      "Directed comprehensive recruitment analytics dashboard implementation",
+      "Tracked candidate pipelines, funnel conversion rates, and recruiter performance",
+      "Enabled real-time visibility into sourcing efficiency and talent quality",
+      "Drove data-backed decisions for scaling operations and optimizing hiring strategies"
+    ],
+    "links": [
+      {
+        "label": "View Dashboard",
+        "href": "https://app.powerbi.com/links/cRDO9DhkB8?ctid=11dea1d3-3f85-4f14-a761-2c1e47132983&pbi_source=linkShare&bookmarkGuid=6f3d2712-e833-4587-955b-dad16499c7dc"
+      }
+    ],
+    "image": "/projects/recruiting-dashboard.png",
     "featured": true
   },
   {
@@ -75,23 +366,6 @@
     ],
     "links": [],
     "image": "/projects/web-platform.png",
-    "featured": false
-  },
-  {
-    "slug": "design-system",
-    "title": "Cross-Platform Design System",
-    "domains": ["uiux"],
-    "role": "Product Manager",
-    "team": "2 Designers, 3 Frontend Devs",
-    "stack": ["Figma", "React", "Storybook", "Tailwind CSS"],
-    "outcomes": [
-      "50% faster design-to-dev handoff",
-      "User satisfaction improved from 3.8 to 4.6",
-      "WCAG AA compliance across all components",
-      "Adopted by 5 product teams"
-    ],
-    "links": [],
-    "image": "/projects/design-system.png",
     "featured": false
   },
   {

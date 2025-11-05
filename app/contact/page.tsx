@@ -12,7 +12,7 @@ export default function ContactPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-manrope uppercase">Get in Touch</h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-agdasima">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto font-agdasima">
             Open to new opportunities in product management, data analytics, and AI engineering.
             Let&apos;s connect and explore how we can build something impactful together.
           </p>
@@ -22,18 +22,18 @@ export default function ContactPage() {
           {/* Email */}
           <a
             href="mailto:natnael.endale@example.com"
-            className="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900 transition-colors">
+              <div className="p-3 rounded-lg bg-emerald-50  text-emerald-700 group-hover:bg-emerald-100 transition-colors">
                 <Mail className="w-6 h-6" />
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-2 font-manrope">Email</h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-2 font-agdasima">
+                <p className="text-slate-600 mb-2 font-agdasima">
                   Reach out directly via email for opportunities and collaborations.
                 </p>
-                <span className="text-emerald-700 dark:text-emerald-400 font-medium group-hover:underline font-agdasima">
+                <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
                   natnael.endale@example.com
                 </span>
               </div>
@@ -45,18 +45,18 @@ export default function ContactPage() {
             href="https://linkedin.com/in/natnael"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300  hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900 transition-colors">
+              <div className="p-3 rounded-lg bg-emerald-50  text-emerald-700 group-hover:bg-emerald-100 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-2 font-manrope">LinkedIn</h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-2 font-agdasima">
+                <p className="text-slate-600 mb-2 font-agdasima">
                   Connect with me professionally and see my career journey.
                 </p>
-                <span className="text-emerald-700 dark:text-emerald-400 font-medium group-hover:underline font-agdasima">
+                <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
                   linkedin.com/in/natnael
                 </span>
               </div>
@@ -68,18 +68,18 @@ export default function ContactPage() {
             href="https://github.com/natnael"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900 transition-colors">
+              <div className="p-3 rounded-lg bg-emerald-50  text-emerald-700 group-hover:bg-emerald-100 transition-colors">
                 <Github className="w-6 h-6" />
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-2 font-manrope">GitHub</h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-2 font-agdasima">
+                <p className="text-slate-600 mb-2 font-agdasima">
                   Check out my open-source contributions and project repositories.
                 </p>
-                <span className="text-emerald-700 dark:text-emerald-400 font-medium group-hover:underline font-agdasima">
+                <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
                   github.com/natnael
                 </span>
               </div>
@@ -87,9 +87,9 @@ export default function ContactPage() {
           </a>
 
           {/* Calendly (Optional) */}
-          <div className="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div className="p-8 rounded-2xl border border-slate-200 bg-slate-50">
             <h2 className="text-xl font-semibold mb-4 font-manrope">Schedule a Call</h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-4 font-agdasima">
+            <p className="text-slate-600 mb-4 font-agdasima">
               Want to discuss a project or opportunity? Book a 30-minute intro call.
             </p>
             <a
@@ -100,18 +100,18 @@ export default function ContactPage() {
             >
               Book a Call
             </a>
-            <p className="text-xs text-slate-500 dark:text-slate-500 mt-3 font-agdasima">
+            <p className="text-xs text-slate-500 mt-3 font-agdasima">
               Available Monday-Friday, 9 AM - 5 PM EAT
             </p>
           </div>
         </div>
 
         {/* Additional Info */}
-        <div className="p-8 rounded-2xl bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800">
-          <h2 className="text-2xl font-bold mb-4 text-emerald-900 dark:text-emerald-100 font-manrope">
+        <div className="p-8 rounded-2xl bg-emerald-50  border border-emerald-200">
+          <h2 className="text-2xl font-bold mb-4 text-emerald-900 font-manrope">
             What to Expect
           </h2>
-          <div className="grid md:grid-cols-2 gap-6 text-emerald-800 dark:text-emerald-200">
+          <div className="grid md:grid-cols-2 gap-6 text-emerald-800">
             <div>
               <h3 className="font-semibold mb-2 font-manrope">Response Time</h3>
               <p className="text-sm font-agdasima">I typically respond within 24-48 hours on weekdays.</p>

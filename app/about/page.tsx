@@ -15,8 +15,8 @@ export default function AboutPage() {
 
                 {/* Bio */}
                 <section className="mb-16">
-                    <div className="prose dark:prose-invert max-w-none">
-                        <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-agdasima">
+                    <div className="prose max-w-none">
+                        <p className="text-xl text-slate-600 leading-relaxed mb-6 font-agdasima">
                             Natnael Endale is a Product Manager who blends data analytics, automation, and design to
                             build intelligent, testable products.
                             He&apos;s fluent in SQL, Python, and Power BI for data; and tools like Lovable, Figma AI, Supabase,
@@ -27,7 +27,7 @@ export default function AboutPage() {
                     {/* Core Skills */}
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold text-emerald-700 mb-4 font-manrope">Core Skills</h3>
-                        <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-agdasima">
+                        <p className="text-slate-600 lg:text-lg  leading-relaxed font-agdasima">
                             Python · SQL · Power BI · Figma AI · Lovable · Supabase · Zapier · Rapid POC Development ·
                             Data Automation · Product Analytics · System Design
                         </p>
@@ -52,23 +52,23 @@ export default function AboutPage() {
                     <div className="space-y-4">
                         <div className="flex items-start gap-3">
                             <span className="text-emerald-600 font-bold text-lg">1.</span>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Speed through iteration</p>
+                            <p className="text-slate-600 font-agdasima text-lg">Speed through iteration</p>
                         </div>
                         <div className="flex items-start gap-3">
                             <span className="text-emerald-600 font-bold text-lg">2.</span>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Data clarity drives design</p>
+                            <p className="text-slate-600 font-agdasima text-lg">Data clarity drives design</p>
                         </div>
                         <div className="flex items-start gap-3">
                             <span className="text-emerald-600 font-bold text-lg">3.</span>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Build smart, not complex</p>
+                            <p className="text-slate-600 font-agdasima text-lg">Build smart, not complex</p>
                         </div>
                         <div className="flex items-start gap-3">
                             <span className="text-emerald-600 font-bold text-lg">4.</span>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Automation before repetition</p>
+                            <p className="text-slate-600 font-agdasima text-lg">Automation before repetition</p>
                         </div>
                         <div className="flex items-start gap-3">
                             <span className="text-emerald-600 font-bold text-lg">5.</span>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg">Design that informs execution</p>
+                            <p className="text-slate-600 font-agdasima text-lg">Design that informs execution</p>
                         </div>
                     </div>
                 </section>
@@ -76,7 +76,6 @@ export default function AboutPage() {
                 {/* Tech Stack */}
                 <section className="mb-16">
                     <div className="flex items-center gap-3 mb-8">
-                        <span className="text-2xl">🧠</span>
                         <h2 className="text-2xl font-bold font-manrope">Tech Stack</h2>
                     </div>
                     
@@ -85,7 +84,7 @@ export default function AboutPage() {
                             <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
                                 Data & Analytics
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                            <p className="text-slate-600 font-agdasima">
                                 Python · SQL · Power BI · Pandas
                             </p>
                         </div>
@@ -94,7 +93,7 @@ export default function AboutPage() {
                             <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
                                 Automation
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                            <p className="text-slate-600 font-agdasima">
                                 Zapier · n8n · Supabase · API Integrations
                             </p>
                         </div>
@@ -103,7 +102,7 @@ export default function AboutPage() {
                             <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
                                 Prototyping & Design
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                            <p className="text-slate-600 font-agdasima">
                                 Figma AI · Lovable · Galileo AI
                             </p>
                         </div>
@@ -112,7 +111,7 @@ export default function AboutPage() {
                             <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
                                 Web Tools
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                            <p className="text-slate-600 font-agdasima">
                                 Next.js · TypeScript · Tailwind CSS · shadcn/ui
                             </p>
                         </div>
@@ -121,7 +120,7 @@ export default function AboutPage() {
                             <h3 className="text-lg font-semibold text-emerald-700 mb-4 font-manrope">
                                 Infrastructure
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400 font-agdasima">
+                            <p className="text-slate-600 font-agdasima">
                                 GitHub Actions · Vercel · Replit
                             </p>
                         </div>
@@ -131,8 +130,8 @@ export default function AboutPage() {
                 {/* Approach */}
                 <section>
                     <h2 className="text-2xl font-bold mb-8 font-manrope">Approach</h2>
-                    <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
-                        <p className="text-slate-600 dark:text-slate-400 font-agdasima text-lg leading-relaxed">
+                    <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <p className="text-slate-600 font-agdasima text-lg leading-relaxed">
                             My approach combines data-driven insights with rapid iteration. I believe in building smart solutions 
                             that scale through automation rather than complexity. Every product decision is backed by data, 
                             every process is designed for efficiency, and every design choice informs better execution.

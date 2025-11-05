@@ -15,7 +15,6 @@ const domainFilters = [
   { value: "web", label: "Web" },
   { value: "mobile", label: "Mobile" },
   { value: "uiux", label: "UI/UX" },
-  { value: "qa", label: "QA/CI" },
 ];
 
 export default function ProjectsClient() {
@@ -55,7 +54,7 @@ export default function ProjectsClient() {
               <button
                 key={filter.value}
                 onClick={() => setSelectedDomain(filter.value)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 font-manrope ${
+                className={`px-4 py-2 rounded-lg text-sm cursor-pointer font-medium transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 font-manrope ${
                   selectedDomain === filter.value
                     ? "bg-primary text-white"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
@@ -68,7 +67,7 @@ export default function ProjectsClient() {
           </div>
 
           <div className="flex gap-2 items-center">
-            <label htmlFor="sort" className="text-sm text-slate-600 dark:text-slate-400 font-agdasima">
+            <label htmlFor="sort" className="text-sm text-slate-600 font-agdasima">
               Sort by:
             </label>
             <select
@@ -85,7 +84,7 @@ export default function ProjectsClient() {
 
         <motion.div 
           layout
-          className="mb-6 text-sm text-slate-600 dark:text-slate-400 font-agdasima"
+          className="mb-6 text-sm text-slate-600 font-agdasima"
         >
           Showing {filteredProjects.length} project{filteredProjects.length !== 1 ? "s" : ""}
         </motion.div>
@@ -129,7 +128,7 @@ export default function ProjectsClient() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center py-16"
           >
-            <p className="text-slate-600 dark:text-slate-400 text-lg font-agdasima">
+            <p className="text-slate-600 text-lg font-agdasima">
               No projects found in this category.
             </p>
           </motion.div>
