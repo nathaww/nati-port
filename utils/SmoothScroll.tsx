@@ -3,7 +3,7 @@ import { ReactLenis } from 'lenis/react'
 
 function SmoothScrolling({ children }: React.PropsWithChildren<object>) {
   return (
-    <ReactLenis root options={{ duration: 2 }}>
+    <ReactLenis root options={{ duration: 1 }}>
       {children}
     </ReactLenis>
   );

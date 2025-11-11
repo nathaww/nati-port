@@ -46,7 +46,7 @@ export function ProjectCard({
   const [imageError, setImageError] = useState(false);
 
   return (
-    <article className="group border border-slate-500 bg-white overflow-hidden rounded-[4rem] cursor-pointer transition-all h-[70vh] ">
+    <article className="group border border-slate-500 bg-white overflow-hidden rounded-[4rem] cursor-pointer transition-all lg:h-[70vh] ">
       <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
         {image && !imageError ? (
           <Image

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Natnael Endale - Product Manager",
     description: "Data-driven PM leading AI, Analytics, Web & Mobile products.",
-    images: ["/og/profile.jpg"],
+    images: ["/og/image.png"],
   },
 };
 
