@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 w-full gap-8 mb-8">
           <div>
-            <h3 className="text-3xl md:text-4xl uppercase mb-3 text-white font-extrabold font-manrope">
+            <h3 className="text-2xl md:text-4xl uppercase mb-3 text-white font-extrabold font-manrope">
               Let&apos;s build something efficient, automated, data-backed and designed to scale.
             </h3>
             <p className="text-lg text-slate-300 mb-6 font-agdasima">
