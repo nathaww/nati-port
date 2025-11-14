@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Email */}
           <a
-            href="mailto:natnael.endale@example.com"
+            href="mailto:natnael@endale.dev"
             className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             <div className="flex items-start gap-4">
@@ -34,7 +34,7 @@ export default function ContactPage() {
                   Reach out directly via email for opportunities and collaborations.
                 </p>
                 <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
-                  natnael.endale@example.com
+                  natnael@endale.dev
                 </span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function ContactPage() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/natnael"
+            href="http://linkedin.com/in/natnael-endale-mba-a261651b4"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300  hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
@@ -57,7 +57,7 @@ export default function ContactPage() {
                   Connect with me professionally and see my career journey.
                 </p>
                 <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
-                  linkedin.com/in/natnael
+                  linkedin.com/in/natnael-endale-mba-a261651b4
                 </span>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/natnael"
+            href="https://github.com/Natnaele22"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-8 rounded-2xl border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
@@ -80,7 +80,7 @@ export default function ContactPage() {
                   Check out my open-source contributions and project repositories.
                 </p>
                 <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
-                  github.com/natnael
+                  github.com/Natnaele22
                 </span>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-2 font-manrope">Time Zone</h3>
-              <p className="text-sm font-agdasima">East Africa Time (EAT / UTC+3)</p>
+              <p className="text-sm font-agdasima">Eastern Standard Time (EST / UTC-5)</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2 font-manrope">Preferred Contact</h3>
