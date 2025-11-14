@@ -33,12 +33,12 @@ export default function Home() {
       <Service />
 
       <section className="bg-white px-4 py-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full md:max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl uppercase mb-8 font-manrope font-extrabold">
             Leadership Highlights
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 font-agdasima">
-            <div className="col-span-12 md:col-span-6">
+            <div className="w-full">
               <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Cross-Functional Leadership
               </h3>
@@ -57,7 +57,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="col-span-12 md:col-span-6">
+            <div className="w-full">
               <h3 className="text-xl font-bold mb-4 text-emerald-700 font-manrope">
                 Results & KPIs
               </h3>
@@ -77,7 +77,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 col-span-12 gap-8 pt-12 w-full border-t border-slate-200">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 w-full border-t border-slate-200">
               <Metric label="Products Shipped" value="15+" />
               <Metric label="Team Members Led" value="25+" />
               <Metric label="Stakeholders Managed" value="30+" />

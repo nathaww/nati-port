@@ -71,13 +71,13 @@ export function Hero({ ctas, startAnimation }: HeroProps) {
     };
   }, [startAnimation]);
   return (
-    <section className="relative bg-white min-h-screen py-16 md:py-20 px-4 flex items-end justify-center">
+    <section className="relative bg-white min-h-screen py-16 md:py-20 lg:px-4 flex items-end justify-center">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-5xl flex flex-col items-center gap-6">
 
 
           <EventBadge3D />
-          <h1 className="text-3xl px-1 md:text-6xl text-black font-manrope font-extrabold uppercase text-center">
+          <h1 className="text-2xl px-1 md:text-6xl text-black font-manrope font-extrabold uppercase text-center">
             Building smart, data driven products with automation and design precision.
           </h1>
           <div className="hidden md:flex flex-wrap gap-4">

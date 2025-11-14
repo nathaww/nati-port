@@ -46,10 +46,10 @@ export function Metric({ label, value, caption }: MetricProps) {
 
   return (
     <div ref={ref} className="text-center font-manrope">
-      <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
+      <div className="text-2xl md:text-4xl font-bold text-primary mb-1">
         {displayValue}{suffix}
       </div>
-      <div className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+      <div className="text-sm font-medium text-slate-700 mb-1">
         {label}
       </div>
       {caption && (
