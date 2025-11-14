@@ -211,12 +211,14 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
               }}
             >
               <div className="flex flex-col items-center gap-3 w-44 relative z-1">
-                <div className="size-28 md:size-32 rounded-full overflow-hidden border-2 border-white">
+                <div className="size-28 md:size-32 rounded-full overflow-hidden border-2 border-white bg-white">
                   <Image
                     src="/imgs/profile.jpeg"
                     alt="Natnael Profile"
-                    width={80}
-                    height={80}
+                    width={128}
+                    height={128}
+                    unoptimized
+                    priority
                     className="w-full h-full object-cover"
                   />
                 </div>
