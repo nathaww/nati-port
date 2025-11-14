@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail, Download } from "./icons";
+import { Github, Linkedin, Mail } from "./icons";
 
 export function Footer() {
   return (
@@ -20,7 +20,7 @@ export function Footer() {
               Get in touch
             </Link>
           </div>
-          
+
           <div className="flex flex-col justify-end md:items-center">
             <h4 className="font-semibold mb-4 text-white font-manrope">Contact Options</h4>
             <div className="space-y-3 mb-6">
@@ -30,7 +30,7 @@ export function Footer() {
                   href="mailto:natnael@endale.dev"
                   className="text-white hover:text-primary transition-colors font-agdasima"
                 >
-                  natnael@endale.dev
+                  natnaelvendale@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -41,7 +41,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors font-agdasima"
                 >
-                  linkedin.com/in/natnaelende
+                  Linkedin
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -52,23 +52,13 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors font-agdasima"
                 >
-                  github.com/natnaelende
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Download className="w-5 h-5 text-primary" />
-                <a
-                  href="/assets/Natnael_Portfolio.pdf"
-                  target="_blank"
-                  className="text-white hover:text-primary transition-colors font-agdasima"
-                >
-                  Download Portfolio
+                  Github
                 </a>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-500">
           <p>© {new Date().getFullYear()} Natnael Endale. All rights reserved.</p>
         </div>

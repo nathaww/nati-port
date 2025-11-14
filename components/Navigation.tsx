@@ -15,13 +15,13 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="hidden lg:flex text-xl font-manrope font-bold hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+            className="hidden lg:flex text-xl font-manrope font-bold hover:text-emerald-700 transition-colors rounded"
           >
             Natnael Endale
           </Link>
           <Link
             href="/"
-            className="flex lg:hidden text-xl font-manrope font-bold hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded"
+            className="flex lg:hidden text-xl font-manrope font-bold hover:text-emerald-700 transition-colors rounded"
           >
             NE
           </Link>

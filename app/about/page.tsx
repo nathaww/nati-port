@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Download } from "@/components/icons";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,16 +29,6 @@ export default function AboutPage() {
                             Python · SQL · Power BI · Figma AI · Lovable · Supabase · Zapier · Rapid POC Development ·
                             Data Automation · Product Analytics · System Design
                         </p>
-                    </div>
-
-                    <div className="mt-8">
-                        <Link
-                            href="/assets/Natnael_Portfolio.pdf"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-lg font-medium hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 font-manrope"
-                        >
-                            <Download className="w-5 h-5" />
-                            Download Portfolio PDF
-                        </Link>
                     </div>
                 </section>
 

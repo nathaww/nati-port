@@ -12,19 +12,19 @@ export default function Home() {
           { label: "View Projects", href: "/projects", variant: "secondary" },
           {
             label: "GitHub",
-            href: "https://github.com/natnaelende",
+            href: "https://github.com/Natnaele22",
             variant: "ghost",
             external: true,
           },
           {
             label: "LinkedIn",
-            href: "https://linkedin.com/in/natnaelende",
+            href: "http://linkedin.com/in/natnael-endale-mba-a261651b4",
             variant: "ghost",
             external: true,
           },
           {
-            label: "Download PDF",
-            href: "/assets/Natnael_Portfolio.pdf",
+            label: "E-mail",
+            href: "natnaelvendale@gmail.com",
             variant: "ghost",
           },
         ]}
@@ -77,13 +77,13 @@ export default function Home() {
               </ul>
             </div>
 
+          </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 w-full border-t border-slate-200">
               <Metric label="Products Shipped" value="15+" />
               <Metric label="Team Members Led" value="25+" />
               <Metric label="Stakeholders Managed" value="30+" />
               <Metric label="On-Time Delivery" value="95%" />
             </div>
-          </div>
         </div>
       </section>
 
