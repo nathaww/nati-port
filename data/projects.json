@@ -18,7 +18,7 @@
         "href": "https://github.com/natnael/applizy_coverletter_generator"
       }
     ],
-    "image": "/projects/applizy-cover.png",
+    "image": "/imgs/projects/applizy.png",
     "featured": true
   },
   {
@@ -106,7 +106,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/tow-app.png",
+    "image": "/imgs/projects/tow.png",
     "featured": false
   },
   {
@@ -128,7 +128,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/hoomez-app.png",
+    "image": "/imgs/projects/homez.png",
     "featured": false
   },
   {
@@ -150,7 +150,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/learning-app.png",
+    "image": "/imgs/projects/learning.png",
     "featured": false
   },
   {
@@ -194,7 +194,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/soccer-app.png",
+    "image": "/imgs/projects/soccer.png",
     "featured": false
   },
   {
@@ -216,7 +216,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/mela-app.png",
+    "image": "/imgs/projects/finance.png",
     "featured": false
   },
   {
@@ -238,7 +238,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/infnova-web.png",
+    "image": "/imgs/projects/infnova.png",
     "featured": false
   },
   {
@@ -260,7 +260,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/laundry-saas.png",
+    "image": "/imgs/projects/laundry.png",
     "featured": false
   },
   {
@@ -282,7 +282,7 @@
         "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
       }
     ],
-    "image": "/projects/planz-web.png",
+    "image": "/imgs/projects/planz.png",
     "featured": false
   },
   {
@@ -304,7 +304,7 @@
         "href": "https://app.powerbi.com/view?r=eyJrIjoiOWU2MTA3ZjEtMmFmNS00OWU2LThjZDctYWM5YjE2ZmZkMTVlIiwidCI6ImNjYzExNDA5LTBlYTMtNGE4Ny05M2VhLTk2ODdmM2RhYTczZiJ9"
       }
     ],
-    "image": "/projects/financial-dashboard.png",
+    "image": "/imgs/projects/fid.png",
     "featured": true
   },
   {
@@ -326,7 +326,7 @@
         "href": "https://app.powerbi.com/view?r=eyJrIjoiOWYzMmVhNmItNThjMi00ZDE4LTg5ZGEtNDBhMDZiOGVjZjMxIiwidCI6ImNjYzExNDA5LTBlYTMtNGE4Ny05M2VhLTk2ODdmM2RhYTczZiJ9"
       }
     ],
-    "image": "/projects/pizza-dashboard.png",
+    "image": "/imgs/projects/pizza.png",
     "featured": false
   },
   {

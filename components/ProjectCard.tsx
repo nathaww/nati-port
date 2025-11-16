@@ -46,14 +46,14 @@ export function ProjectCard({
   const [imageError, setImageError] = useState(false);
 
   return (
-    <article className="group border border-slate-500 bg-white overflow-hidden rounded-[4rem] cursor-pointer transition-all lg:h-[70vh] ">
-      <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
+    <article className="group border border-slate-500 bg-white overflow-hidden cursor-pointer transition-all lg:h-[70vh] ">
+      <div className="relative w-full h-52 bg-slate-100 overflow-hidden">
         {image && !imageError ? (
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-center group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             onError={() => setImageError(true)}
           />
