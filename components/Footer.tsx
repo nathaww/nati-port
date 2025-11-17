@@ -27,16 +27,16 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
                 <a
-                  href="mailto:natnael@endale.dev"
+                  href="mailto:natnaelvendale@gmail.com"
                   className="text-white hover:text-primary transition-colors font-agdasima"
                 >
-                  natnaelvendale@gmail.com
+                  Email
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Linkedin className="w-5 h-5 text-primary" />
                 <a
-                  href="https://linkedin.com/in/natnaelende"
+                  href="http://linkedin.com/in/natnael-endale-mba-a261651b4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors font-agdasima"
@@ -47,7 +47,7 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <Github className="w-5 h-5 text-primary" />
                 <a
-                  href="https://github.com/natnaelende"
+                  href="https://github.com/Natnaele22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors font-agdasima"

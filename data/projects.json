@@ -154,28 +154,6 @@
     "featured": false
   },
   {
-    "slug": "getzjob-social-recruiting",
-    "title": "GetzJob: Social Job-Seeking Platform",
-    "domains": ["mobile", "uiux"],
-    "role": "Product Manager",
-    "team": "3 Mobile Developers, 1 Designer",
-    "stack": ["React Native", "Node.js", "MongoDB", "Figma"],
-    "outcomes": [
-      "Oversaw product vision for social job-seeking platform",
-      "Integrated networking, listings, and skill-based recommendations",
-      "Improved job discovery through social connections",
-      "Enhanced candidate-employer matching algorithms"
-    ],
-    "links": [
-      {
-        "label": "Figma",
-        "href": "https://www.figma.com/design/vxxjkJWIRS84aNNoYsgInm/Sample-Design-for-mobile---web?node-id=0-1&p=f&t=xCssWu00TtTNQpq2-0"
-      }
-    ],
-    "image": "/projects/getzjob-app.png",
-    "featured": false
-  },
-  {
     "slug": "soccer-performance-app",
     "title": "Soccer Performance Tracking App",
     "domains": ["mobile", "uiux"],
@@ -331,7 +309,7 @@
   },
   {
     "slug": "stafrica-recruiting-powerbi",
-    "title": "STAfrica Recruiting Analytics Dashboard",
+    "title": "Stafrica Recruiting Analytics Dashboard",
     "domains": ["data"],
     "role": "PM / Data Lead",
     "team": "2 Data Analysts, 1 BI Developer",
@@ -348,41 +326,7 @@
         "href": "https://app.powerbi.com/links/cRDO9DhkB8?ctid=11dea1d3-3f85-4f14-a761-2c1e47132983&pbi_source=linkShare&bookmarkGuid=6f3d2712-e833-4587-955b-dad16499c7dc"
       }
     ],
-    "image": "/projects/recruiting-dashboard.png",
+    "image": "/imgs/projects/stafrica.png",
     "featured": true
-  },
-  {
-    "slug": "web-platform-migration",
-    "title": "Enterprise Web Platform Migration",
-    "domains": ["web"],
-    "role": "Technical PM",
-    "team": "4 Full-stack Developers, 1 DevOps",
-    "stack": ["Next.js", "TypeScript", "GraphQL", "Docker"],
-    "outcomes": [
-      "Sub-2.1s average page load time",
-      "42% faster feature delivery post-migration",
-      "99.9% uptime SLA achieved",
-      "Reduced infrastructure costs by 25%"
-    ],
-    "links": [],
-    "image": "/projects/web-platform.png",
-    "featured": false
-  },
-  {
-    "slug": "cicd-pipeline",
-    "title": "Automated CI/CD Pipeline Implementation",
-    "domains": ["qa"],
-    "role": "Product Manager",
-    "team": "1 DevOps Engineer, 2 QA Engineers",
-    "stack": ["GitHub Actions", "Docker", "Jest", "Playwright"],
-    "outcomes": [
-      "28% reduction in release defects",
-      "99.9% build success rate over rolling 30 days",
-      "35% shorter regression test suites",
-      "Deploy frequency increased from weekly to daily"
-    ],
-    "links": [],
-    "image": "/projects/cicd.png",
-    "featured": false
   }
 ]

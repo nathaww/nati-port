@@ -34,7 +34,7 @@ export default function ContactPage() {
                   Reach out directly via email for opportunities and collaborations.
                 </p>
                 <span className="text-emerald-700 font-medium group-hover:underline font-agdasima">
-                  natnael@endale.dev
+                  natnaelvendale@gmail.com
                 </span>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
               Want to discuss a project or opportunity? Book a 30-minute intro call.
             </p>
             <a
-              href="https://calendly.com/natnael"
+              href="https://calendly.com/natnaelvendale"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-emerald-700 text-white rounded-lg font-medium hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 font-manrope"
